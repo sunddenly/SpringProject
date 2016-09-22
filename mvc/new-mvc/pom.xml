@@ -14,6 +14,7 @@
         <module>dispathredirect</module>
         <module>ModelAttribute</module>
         <module>MvcRest</module>
+        <module>upload2</module>
     </modules>
     <properties>
         <!--架包版本变量 start-->
@@ -166,6 +167,7 @@
                 <artifactId>validation-api</artifactId>
                 <version>${validation-api.version}</version>
             </dependency>
+			
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>

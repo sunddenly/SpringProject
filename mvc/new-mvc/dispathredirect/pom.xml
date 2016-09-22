@@ -8,9 +8,12 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <name>dispath-redirect</name>
+    <modules>
+        <module>../uploadify</module>
+    </modules>
     <artifactId>dispath-redirect</artifactId>
 
     <build>

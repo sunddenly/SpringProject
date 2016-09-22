@@ -1,0 +1,148 @@
+body {
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    background-color: #EBF5F3;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.navbar-custom {
+    /*color: #FFFFFF;*/
+    background-color: #56b9ab;
+
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 55px;
+    height: 55px;
+    padding-top: 0px;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #175A94;
+}
+
+.page-header {
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    /* border-bottom: 1px solid #bbb;*/
+}
+
+hr {
+    border-bottom: 1px solid #bbb;
+}
+
+.img_border {
+    border: 1px solid #bbb;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .center_toaster {
+        right: 35%;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+    .center_toaster {
+        right: 25%;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 200px ) and (max-width: 399px) {
+    .center_toaster {
+        right: 10%;
+        width: 80%;
+    }
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.row a:hover {
+    text-decoration: none;
+}
+
+.addMaigin {
+    margin-bottom: 30px;
+}
+
+.change_font {
+    font-size: 1.5em;
+}
+
+.button_width {
+    width: 4em;
+}
+
+.button_width2 {
+    width: 4em;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -6em;
+}
+
+.push {
+    height: 6em;
+}
+
+.footer{
+    height: 4em;
+}
+
+.color_white {
+    background: #ffffff;
+}
+
+#dropzone {
+    /*background: palegreen;*/
+    /*width: 150px;*/
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    border: 2px dotted #A5A5C7;
+    color: #DADCE3;
+    background: #ffffff;
+}
+#dropzone.in {
+    width: 600px;
+    height: 200px;
+    line-height: 200px;
+    font-size: larger;
+
+
+}
+#dropzone.hover {
+    background: lawngreen;
+}
+#dropzone.fade {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 1;
+}

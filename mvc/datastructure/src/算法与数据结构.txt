@@ -1,0 +1,4751 @@
+　　
+　　
+　　
+　　算法数据结构
+
+
+   
+
+   
+　　
+
+
+1	链表	7
+1.1 链表基本操作	7
+1.1.1 创建链表（尾插法）	7
+1.1.2 删除链表指定节点	7
+1.1.3 排序链表	7
+1.2 链表去重	8
+1.2.1 普通链表去重	8
+1.2.2 排序链表去重	9
+1.3 链表逆置	9
+1.4 链表中倒数第k个结点	10
+1.5 遍历打印	10
+1.6 不知道头指针情况下删除节点	10
+1.7 合并两个排序的链表	10
+1.7.1 非递归方式	10
+1.7.2 递归方式	11
+1.8 链表分割	11
+1.9 快慢指针	12
+1.9.1 求环的入口点	12
+1.9.2 判断链表回文	13
+1.10 求链表交点	14
+1.11 复杂链表复制	14
+2	栈与队列	18
+2.1 栈	18
+2.1.1 顺序栈	18
+2.1.2 链栈	18
+2.2 队列	19
+2.2.1 循环队列	19
+2.2.2 链式队列	20
+2.3 用两个栈模拟一个队列	21
+2.4 用两个队列模拟一个栈（金典p51）	22
+2.5 栈的压入弹出序列(offer p134)	22
+2.6 min函数栈（金典p136）	23
+2.6.1 记录状态法	23
+2.6.2 辅助栈法	24
+2.7 集合栈（金典p137）	24
+2.8 双栈排序(金典p144)	25
+2.9 猫狗收容所（金典p145）	26
+3	树结构	29
+3.1 二叉排序树构造	29
+3.2 二叉树遍历	29
+3.2.1 先序遍历	30
+3.2.2 中序遍历	31
+3.2.3 后序遍历	32
+3.2.4 层序遍历	33
+3.3 5.3 二叉树遍历的应用	34
+3.3.1 求解二叉树中节点间的最大距离	34
+3.3.2 求解树的深度	34
+3.3.3 判断一个树是否为平衡二叉树	35
+3.3.4 求解节点数量	35
+3.3.5 求解叶子节点数量	35
+3.4 二叉搜索树的后序遍历序列	36
+3.4.1 递归方式	36
+3.4.2 非递归方式	36
+3.5 求先后序列	36
+3.5.1 根据先序、中序求后序	36
+3.5.2 根据后序、中序求先序	37
+3.5.3 查找根节点	37
+3.6 二叉排序树与双向链表	37
+3.6.1 递归方式（中序遍历）	37
+3.6.2 非递归方式（中序遍历）	38
+3.7 按之字形顺序打印二叉树	39
+3.8 二叉搜索树的第k个结点	39
+3.9 镜像二叉树	40
+3.10 对称的二叉树	40
+3.10.1 递归	41
+3.10.2 非递归	41
+3.11 二叉树打印多行	41
+3.12 二叉树序列化	42
+3.13 二叉树的下一个结点	43
+3.14 树的子结构	43
+3.15 二叉树中和为某一值的路径	44
+4	图结构	47
+4.1 图的构造	47
+4.1.1 邻接矩阵	47
+4.1.2 邻接表法	47
+4.2 图的遍历	48
+4.2.1 深度优先遍历DFS	48
+4.2.2 广度优先遍历BFS	50
+4.3 图的应用	51
+4.3.1 字符串变换（BFS）	51
+4.3.2 按要求打印数组排列情况（DFS）	53
+5	数组	56
+5.1 求素数	56
+5.1.1 判断素数	56
+5.1.2 范围内素数	56
+5.1.3 水仙花数	56
+5.2 查找数组中最大最小值	56
+5.2.1 三个数求最大最小值	56
+5.2.2 求最大最小值	56
+5.3 第二大数	57
+5.4 子数组最大之和(动态规划)(金典p319)	58
+5.4.1 三重循环法	58
+5.4.2 组合法	58
+5.4.3 动态规划O(n)	58
+5.4.4 附带位置O(n)	58
+5.5 求解数对之差的最大值(动态规划)	59
+5.6 数组中组合数为num的组合	59
+5.6.1 排序法O(nlog2n+n)	60
+5.6.2 HashMap法O(n+n)	60
+5.7 求和为s的连续有序的段的个数	60
+5.8 找出数组中重复元素最多的数	61
+5.8.1 空间换时间	61
+5.8.2 Map映射表	61
+5.9 把数组循环右移k位	62
+5.10 递归求解数组最大元素	62
+5.11 求解绝对值最小数(升序数组有0、正、负)	62
+5.12 求两个指定元素在数组中的最小距离(数组有重复)	63
+5.13 求解三元组的距离	64
+5.14 求指定数字在数组中首次出现的位置(相邻元素相差1)	64
+5.15 合并两个有序子段	65
+5.16 判断一个数组中数值是否连续相邻	65
+5.17 出现一次数(找不重复的)	66
+5.17.1 找出数组中只出现一次的数字(其他均出现两次)	66
+5.17.2 找出数组中只出现一次的数字(其他均出现K次)	66
+5.18 有指定范围的重复元素	66
+5.18.1 找到唯一重复的元素（只有一个元素重复）	66
+5.18.2 找到所有重复的元素（不止一个元素重重复）	67
+5.19 对两个长度相当的数组求交集	67
+5.19.1 二路归并法(两个数组有序情况)	67
+5.19.2 顺序遍历法(只适合数组自身没有重复的情况)	68
+5.19.3 散列法	68
+5.20 对两个长度相差悬殊的数组求交集	68
+5.21 排序数组去重	69
+5.22 求排序数组最短长度	69
+5.23 构建乘积数组	70
+5.24 数组中只出现一次的两个数字	70
+5.25 数组排成最小数	71
+5.26 数组中出现次数超过一半的数字	71
+5.26.1 基于partiton函数的O(n)算法	71
+5.26.2 阵地攻守思想	72
+5.27 清除行列	73
+5.28 判断丑数	73
+5.28.1 蛮力法	73
+5.28.2 创建数组保存已经找到的丑数	74
+5.29 像素旋转	74
+5.30 顺时针打印矩阵	76
+5.31 滑动窗口的最大值	76
+6	字符串	77
+6.1 字符串反转	77
+6.1.1 语句中包含单词	77
+6.1.2 将字符串左右移动	77
+6.2 判断字符串是否由相同的字符组成	78
+6.2.1 排序法	78
+6.2.2 空间换时间	78
+6.3 删除字符串中重复字符	78
+6.3.1 蛮力法	78
+6.3.2 空间换时间位图法	79
+6.4 字符串计数	79
+6.5 按要求打印数组排列情况（图的应用）	80
+6.6 字符串排列	81
+6.7 输出字符串的所有组合	82
+6.7.1 递归实现	82
+6.7.2 二进制法	82
+6.8 截取字符串，不能包含半个汉字	83
+6.9 判断字符串是否为整数	84
+6.10 将字符串转换为数字	85
+6.11 字符串压缩	85
+6.11.1 使用StringBuffer	85
+6.11.2 不使用StringBuffer	86
+6.12 替换空格	87
+6.13 反转子串	87
+6.14 第一个只出现一次的字符位置	88
+6.15 最长合成字符串	88
+6.16 字符流中第一个不重复的字符	89
+7	排序算法	91
+7.1 冒泡排序	91
+7.1.1 上冒：最大值移到最右	91
+7.1.2 下冒：最小值移到最左	91
+7.1.3 双冒：最大值移到最右，从右边将最小移到左	91
+7.2 简单选择排序	92
+7.3 直接插入排序	92
+7.3.1 直插排序	92
+7.3.2 折半插入排序	92
+7.4 希尔插入排序	93
+7.5 快速排序	93
+7.5.1 分割算法（首尾指针法）	93
+7.5.2 分割算法（前后指针法）	94
+7.5.3 递归方式	94
+7.5.4 非递归方式	95
+7.6 归并排序	95
+7.6.1 两个有序段合并	95
+7.6.2 递归方式	96
+7.6.3 非递归方式	96
+7.7 基数排序	97
+7.7.1 排序原理	97
+7.7.2 排序实现	97
+7.8 堆排序	98
+7.8.1 调整顶堆（小顶堆）	98
+7.8.2 堆排序	98
+7.8.3 堆插入	98
+7.8.4 堆删除	98
+7.9 排序应用	99
+7.9.1 快速排序求TopN(不改变原来顺序)	99
+7.9.2 堆排序求TopN	99
+7.9.3 堆排序数据流中的中位数	100
+7.9.4 快速排序将大小写字母分开	100
+7.9.5 快速排序划分非0元素	101
+7.9.6 划分奇数和偶数	101
+7.9.7 快速排序划分三色球	102
+7.9.8 归并排序求反序对的个数	102
+8	查找	105
+8.1 查找算法	105
+8.1.1 二分查找	105
+8.1.2 散列查找	105
+8.2 查找算法应用	107
+8.2.1 二分查找字符串位置	107
+8.2.2 数字在排序数组中出现次数	107
+8.2.3 查找旋转数组最小数	108
+8.2.4 查找排序二维数组元素（offer:p40）	109
+9	位运算	111
+9.1 位运算查找唯一不重复元素	111
+9.1.1 找出数组中只出现一次的数字(其他均出现两次)	111
+9.1.2 找出数组中只出现一次的数字(其他均出现K次)	111
+9.2 位运算查找查找唯一重复元素	111
+9.3 位运算计算去掉重复字符	111
+9.4 位运算求二进制中1的个数	112
+9.4.1 常规法循环32次	112
+9.4.2 特殊法有几个1循环几次(offer:p81)	112
+10	发散思维	114
+10.1 求1+2+·····n	114
+10.2 不用加减乘除做加法	114
+10.3 无判断MAX	114
+11	算法模型抽象部分	116
+11.1 动态规划	116
+11.1.1 斐波那契数列	116
+11.1.2 跳台阶问题	116
+11.1.3 变态跳台阶	116
+11.1.4 矩形覆盖	117
+11.2 分治策略	117
+11.2.1 小球距离	117
+11.3 扑克牌顺序(offer P227)	118
+12	算法效率	120
+12.1 从1到n整数中1出现的次数	120
+12.2 约瑟夫环	120
+12.2.1 高效方式O(mn)	120
+12.2.2 链表方式	120
+12.2.3 线性表方式	121
+12.3 求数值的次方	121
+12.4 无判断MAX	122
+13	海量数据处理	124
+13.1 Hash分治策略	124
+13.1.1 求两个大文件的交集	124
+13.1.2 海量数据排序	124
+13.1.3 海量数据TopN	125
+13.1.4 海量数据TopN	125
+13.2 Bit-Map	126
+13.2.1 排序	126
+13.2.2 去重	127
+13.2.3 查找	127
+13.2.4 查找只出现一次的数（2-bitMap）	127
+13.3 倒排索引	128
+13.4 双层桶思想	130
+
+1 
+链表
+1.1 链表基本操作
+1.1.1 创建链表（尾插法）
+Node head = null;
+public void add(int data){
+	Node newNode = new Node(data);
+	if(head==null){//头结点是否为空
+		head=newNode;
+		return;
+	}
+	Node temp=head;//查找添加位
+	while(temp.next!=null)
+		temp=temp.next;
+	temp.next=newNode;
+}1.1.2  删除链表指定节点
+public Boolean delete(int index){
+	if(index<1||index>length())
+		return false;
+	//删除链表的第一个元素
+	if(index==1){
+		head=head.next;
+		return true;
+	}
+	//删除第一个以外的元素
+	Node pre = head;
+	Node cur = head.next;
+	int i=2;
+	while(cur!=null){
+		if(i==index){
+			pre.next=cur.next;
+			return true;
+		}
+		pre=cur;
+		cur=cur.next;
+		i++;//别忘了
+	}
+	return true;
+}1.1.3  排序链表
+public Node orderList(){
+	Node seq = null;
+	Node cur = head;
+	while(cur.next!=null){//遍历选择
+		seq=cur.next;
+		while(seq!=null){//选出最小点
+			if(cur.data>seq.data){
+				int temp = cur.data;
+				cur.data=seq.data;
+				seq.data=temp;
+			}
+			seq=seq.next;//不要忘了，移动到下一点继续
+		}
+		cur=cur.next;
+	}
+	return head;
+}1.2 链表去重
+1.2.1  普通链表去重
+public ListNode deleteDuplication(ListNode pHead){
+    if(head==null||head.next==null)
+	   return head;
+	Set<Integer> set = new HashSet<Integer>();
+　　ListNode cur = pHead;  
+　　ListNode pre = null;
+    while(cur!=null){
+        if(set.contains(cur.val)){
+            pre.next = cur.next;
+        }else{
+            set.add(cur.val);
+            pre = cur;//pre总指向当前添加的节点，永远指向尾部
+        }
+        cur = cur.next;
+    }
+    return pHead;
+}方法二
+public void deleteDuplecate2(){
+	Node cur = head;
+	while(cur!=null){
+        Node pre = cur;
+		Node seq = cur.next;//这样是为了有前驱
+		while(seq!=null){//若没有后继则不必考虑去重
+			if(seq.data==cur.data){
+				pre.next=seq.next;
+			}else{
+				pre = seq;
+			}
+            seq=seq.next;
+		}
+		cur=cur.next;
+	}
+}1.2.2  排序链表去重
+public ListNode deleteDuplication(ListNode pHead){
+    ListNode cur = pHead;
+    ListNode seq = null;
+    ListNode pre = null;
+    while(cur!=null){//遍历
+        seq = cur.next;
+        if(seq!=null&&seq.val==cur.val){//判断重复，是否为首节点
+            if(cur==pHead){
+            	while(seq!=null&&seq.val ==cur.val){
+            		seq=seq.next;
+        		} 
+            	pHead=seq;
+                cur=seq;
+            }else{
+                while(seq!=null&&seq.val ==cur.val){
+            		seq=seq.next;
+        		} 
+            	pre.next=seq;
+                cur=seq;
+            }                 
+        }else{
+            pre = cur;
+            cur = cur.next;
+        }
+    }
+    return pHead;
+}1.3  链表逆置
+public ListNode ReverseList(ListNode head) {
+	if(head==null||head.next==null)
+        return head;
+　　ListNode pre=head,cur=head.next;
+　　ListNode seq=null,newHead=null;
+    head.next = null;
+    while(cur!=null){
+        seq = cur.next;
+        cur.next = pre;
+        pre = cur;
+        if(seq==null)
+            newHead = cur;
+        cur=seq;
+    }
+    return newHead;
+}1.4  链表中倒数第k个结点
+public ListNode FindKthToTail(ListNode head,int k) {
+    if(head==null||getLen(head)<k||k<=0)
+        return null;
+	ListNode cur1 = head;
+    ListNode cur2 = head;
+    for(int i=1;i<k;i++)
+        cur2=cur2.next;
+    while(cur2.next!=null){
+        cur2=cur2.next;
+        cur1=cur1.next;
+    }
+    return cur1;
+}1.5  遍历打印
+public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+    ArrayList<Integer> list = new ArrayList<>();
+    if(listNode!=null){
+        list=printListFromTailToHead(listNode.next);
+        list.add(listNode.val);    
+    }
+    return list; 
+}1.6  不知道头指针情况下删除节点
+public boolean deleteNode(Node node){
+	if(node==null||node.next==null)
+		return false;
+	//与后继节点交换元素
+	int temp = node.data;
+	node.data = node.next.data;
+	node.next.data = temp;
+	node.next=node.next.next;
+	return true;
+}1.7  合并两个排序的链表
+1.7.1  非递归方式
+public ListNode Merge(ListNode list1,ListNode list2) {
+    if(list1==null)
+		return list2;
+	else if(list2==null)
+		return list1;
+	ListNode cur1=list1,cur2=list2,head=null,rear=null;
+	while(cur1!=null&&cur2!=null){
+		if(head==null){
+			if(cur1.val<cur2.val){
+				head = cur1;
+				rear = cur1;
+				cur1=cur1.next;
+			}else{
+				head=cur2;
+				rear=cur2;
+				cur2=cur2.next;
+			}
+		}else{
+			if(cur1.val<cur2.val){
+				rear.next = cur1;
+				rear=cur1;
+				cur1=cur1.next;
+			}else{
+				rear.next = cur2;
+				rear=cur2;
+				cur2=cur2.next;
+			}
+		}
+	}
+	rear.next=cur1!=null?cur1:cur2;
+	return head;
+}1.7.2  递归方式
+public ListNode Merge(ListNode list1,ListNode list2) {
+    if(list1==null)
+        return list2;
+    else if(list2==null)
+        return list1;
+    ListNode head=null;
+    if(list1.val<list2.val){
+        head=list1;
+        head.next=Merge(list1.next,list2);
+    }else{
+        head=list2;
+        head.next=Merge(list1,list2.next);
+    }
+    return head;
+}1.8  链表分割
+编写代码，以给定值x为基准将链表分割成两部分，所有小于x的结点排在大于或等于x的结点之前
+public ListNode partition(ListNode pHead, int x) {
+    // write code here
+    if(pHead==null)
+        return pHead;
+    ListNode cur = pHead,head1=null,head2=null,rear1=null,rear2=null;
+    while(cur!=null){
+        if(cur.val<x){
+            if(head1==null){
+                head1 = cur;//
+                rear1 = head1;
+                cur= cur.next;
+            }else{
+                rear1.next = cur;
+                rear1 = cur;
+                cur = cur.next;
+            }
+        }else{
+            if(head2==null){
+                head2 = cur;
+                rear2 = head2;
+                cur = cur.next;
+            }else{
+                rear2.next = cur;
+                rear2 = cur;
+                cur = cur.next;
+            }
+        }
+    }
+    if(head1==null)
+        return head2;
+    else if(head2==null)
+    	return head1;
+    else{
+        rear2.next=null;//next不是rear
+        rear1.next = head2;//next啊亲啊
+        return head1;
+    }  
+}1.9  快慢指针
+1.9.1  求环的入口点
+public ListNode EntryNodeOfLoop(ListNode pHead){
+　　ListNode slow=pHead,fast=pHead;
+    if(fast==null||fast.next==null)
+        return null;
+    while(fast!=null&&fast.next!=null){
+        slow = slow.next;
+        fast = fast.next.next;//先移动在判断，因为开始快慢指针都指向head
+        if(fast==slow)
+            break;
+    }
+	slow = pHead;
+    while(slow!=fast){
+        slow=slow.next;
+        fast=fast.next;
+    }
+    return slow;
+}1.9.2   判断链表回文
+【快慢指针查找中间点】
+public ListNode searchMid(ListNode head){
+	ListNode slow=head,quick=head;
+	while(quick!=null&&quick.next!=null){
+		slow=slow.next;
+		quick=quick.next.next;
+	}
+	return slow;
+}【链表逆置判断回文】
+public boolean chkPalindrome(ListNode head) {
+    // write code here
+	if(head==null)
+		return false;
+	ListNode rear = searchMid(head);
+	ListNode cur = rear.next,seq=null;
+	while(cur!=null){
+        seq = cur.next;//保存后继
+		cur.next = rear;//逆置
+		rear = cur;//移动
+		cur = seq;//该算法不需要返回最后节点
+	}
+	while(head!=rear){
+		if(head.val!=rear.val)
+			return false;
+		else{
+			if(head.next==rear&&head.val==rear.val)
+				return true;
+			rear=rear.next;
+			head=head.next;
+		}
+	}
+	return true;
+}1.10  求链表交点
+public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
+    if(pHead1==null||pHead2==null)
+        return null;
+	ListNode tail1 = pHead1,tail2 = pHead2;
+    while(tail1.next!=null)
+        tail1 = tail1.next;
+    while(tail2.next!=null)
+        tail2 = tail2.next;
+    if(tail1!=tail2)
+    	return null;
+    ListNode cur1 = pHead1,cur2 = pHead2;
+    int l1 = getLen(pHead1);
+    int l2 = getLen(pHead2);
+    int delta = l1-l2;
+    if(delta>0){
+        while(delta>0){
+            cur1 = cur1.next;
+            delta--;
+        }  
+    }else{
+        while(delta<0){
+            cur2 = cur2.next;
+            delta++;
+        }
+    }
+    while(cur1!=cur2){
+        cur1=cur1.next;
+        cur2=cur2.next;
+    }
+    return cur1;
+}1.11  复杂链表复制
+public class RandomListNode {
+    int label;
+    RandomListNode next = null;
+    RandomListNode random = null;
+    RandomListNode(int label) {
+        this.label = label;
+    }
+}
+public RandomListNode Clone(RandomListNode pHead){
+ 	if(pHead==null)
+        return null;
+    /**
+     * 1. 创建新链表，并与旧链表以next相连
+     *    定义旧表开始遍历节点
+     * 	  while
+     * 	     1.1 新建节点
+     *       1.2 插入
+     *       1.3 更新遍历节点
+     */
+	RandomListNode cur = pHead;
+	while(cur!=null){
+		RandomListNode newNode = new RandomListNode(cur.label);
+		newNode.next=cur.next;
+		cur.next=newNode;
+		cur=newNode.next;
+	}
+    /**
+     * 2. 根据旧表random与新表random关系，初始新表random指针
+     * 	  (newranom=oldrandom.next)
+     *    定义旧表开始遍历节点
+     * 	  while
+     * 	     1.1 根据旧表获取新表初始点
+     *       1.2 获取旧表random
+     *       1.3 根据旧表random获取新表random
+     *       1.4 更新旧表遍历点
+     */
+	RandomListNode oldCur = pHead;
+	while(oldCur!=null){
+		RandomListNode newCur=oldCur.next;
+		RandomListNode oldRandom = oldCur.random;
+		if(oldRandom!=null)
+			newCur.random=oldRandom.next;
+		oldCur=newCur.next;
+	}
+    /**
+     * 3. 将新表与旧表拆分开
+     *    定义新表头结点和旧表初始遍历点
+     * 	  while
+     * 	     1.1 根据旧表获取新表初始点
+     *       1.2 旧表跳过新表
+     *       1.3 更新旧表初始点
+     *       1.4 新表跳过旧表
+     */
+	RandomListNode newHead=pHead.next;
+	oldCur=pHead;
+	while(oldCur!=null){
+		RandomListNode newCur=oldCur.next;
+		oldCur.next=newCur.next;
+		oldCur=newCur.next;
+		if(oldCur!=null)
+			newCur.next=oldCur.next;
+	}
+	return newHead;
+}
+ 
+
+
+2 栈与队列
+2.1  栈
+2.1.1  顺序栈
+public class SqStack<E> {
+	int top=0; int maxSize=0;
+	Object[] stack;
+	public SqStack(){
+		maxSize=10;
+		this.stack = new Object[10];
+	}
+	public SqStack(int size){
+		this.maxSize=size;
+		this.stack = new Object[size];
+	}
+	public boolean isEmpty(){//判断栈空
+		return top==0;
+	}
+	public void ensureCapacity(int size){//栈扩容
+		int len = stack.length;
+		if(size>len){
+			this.maxSize+=10;
+			stack = Arrays.copyOf(stack, maxSize);
+		}
+	}
+	public E push(E e){//进栈
+		ensureCapacity(top+1);
+		stack[top++]=e;//栈顶指针上移
+		return e;
+	}
+	public E peek(){
+		if(isEmpty())
+			return null;
+		return (E)stack[top-1];//
+	}
+	public E pop(){
+		E e = peek();
+		if(e==null)
+			return e;
+		stack[top-1]=null;//出栈，栈值赋空,先
+		top--;//栈顶指针下移，先赋空再移动
+		return e;
+	}
+}2.1.2  链栈
+public class Node<E> {
+	E data;
+	Node<E> next=null;
+	public Node(E e){
+		this.data = e;
+	}
+}
+public class LinkedStack<E> {
+	Node<E> top = null;
+	public boolean isEmpty(){
+		return top==null;
+	}
+	public E push(E e){
+		Node<E> newNode = new Node<E>(e); 
+		newNode.next=top;
+		top=newNode;
+		return e;
+	}
+	public E peek(){
+		if(isEmpty())
+			return null;
+		return top.data;
+	}
+	public E pop(){
+		if(isEmpty())
+			return null;
+		else{
+			E e = top.data;
+			top = top.next;
+			return e;
+		}
+	}
+}
+2.2  队列
+2.2.1   循环队列
+          
+public class SqQueue<E> {
+	int front = 0;  int rear = 0;
+	int maxSize = 0;
+	Object[] queue;
+	public SqQueue(){
+		this.maxSize=10;
+		this.queue = new Object[10];
+	}
+	public SqQueue(int size){
+		this.maxSize=size;
+		this.queue = new Object[size];
+	}
+	public boolean isEmpty(){
+		return rear==front;
+	}
+	public void ensureCapacity(int size){
+		int newLen = 10;
+		if(size>maxSize-1)//为了能够判断是否满，有一个位置是不放元素的
+			this.maxSize+=newLen;
+	}
+	public int getLen(){
+		return (rear-front+maxSize)%maxSize;
+	}
+	public void offer(E e){
+		if((rear+1)%maxSize==front){//判断是否队满,堆满扩容
+			maxSize+=10;
+			queue = Arrays.copyOf(queue, maxSize);
+		}
+		queue[rear]=e;
+		rear=(rear+1)%maxSize;
+	}
+	public E peek(){
+		if(isEmpty())//判断是否队满
+			return null;
+		return (E) queue[front];
+	}
+	public E poll(){
+		if(isEmpty())//判断是否队满
+			return null;
+		E e = (E) queue[front];
+		front=(front+1)%maxSize;
+		return e;
+	}
+}2.2.2   链式队列
+public class LinkedQueue<E> {
+	Node<E> front = null;
+	Node<E> rear = null;
+	public boolean isEmpty(){
+		return (front==null&&rear==null);
+	}
+	public void offer(E e){
+		Node<E> newNode = new Node<E>(e);
+		if(isEmpty()){
+			front=newNode;
+			rear=newNode;
+		}
+		rear.next=newNode;//入队从队尾入
+		rear=newNode;
+	}
+	public E peek(){
+		return front.data;//取元素从头取
+	}
+	public E poll(){
+		if(isEmpty())
+			return null;
+		E e = front.data;
+		if(front==rear){//若是队列最后一个元素
+			front=null;
+			rear=null;
+			return e;
+		}
+		front = front.next;//出队从头出
+		return e;
+	}
+	public int size(){
+		Node<E> cur = front;
+		int i=0;
+		while(cur!=null){
+			cur=cur.next;
+			i++;
+		}
+		return i;
+	}
+}2.3  用两个栈模拟一个队列
+	基本思想：一个栈S1进行入队操作，另一个栈S2进行出队操作
+	基本步骤：1. 若出队栈S2不为空，直接弹出数据
+            2. 若S2为空，则将S1的内容依次弹出到S2
+            3. 在S2上再次进行弹出操作
+public class Stack2Queue<E> {
+	SqStack s1 = new SqStack<E>(10);
+	SqStack s2 = new SqStack<E>(10);
+	public boolean isEmpty(){
+		return s1.isEmpty()&&s2.isEmpty();
+	}
+	public void offer(E e){
+		s1.push(e);
+	}
+	public E pop(){
+		if(s2.isEmpty())
+			while(!s1.isEmpty())
+				s2.push(s1.pop());
+		return (E) s2.pop();
+	}
+}2.4  用两个队列模拟一个栈（金典p51）
+	基本思想：一个队列q1进行压栈，另一个队列q2进行出栈操作
+	基本步骤：1. 压栈直接由q1入队即可
+              2. 出栈时：
+                 2.1 若q1只有一个元素，出队即可
+                 2.2 若q1不止一个元素，先入队到q2直到一个元素q1再出队
+                 2.3 将q2入队到q1
+public class queue2Stack<E> {
+	SqQueue<E> q1 = new SqQueue<E>();
+	SqQueue<E> q2 = new SqQueue<E>();
+	public void push(E e){
+		q1.offer(e);
+	}
+	public E pop(){
+		if(q1.getLen()!=1)
+			while(q1.getLen()!=1){
+				q2.offer(q1.poll());
+			}
+		E e =q1.poll();
+		while(q2.getLen()>0){
+			q1.offer(q2.poll());
+		}
+		return e;
+	}
+}2.5  栈的压入弹出序列(offer p134)
+基本思想：
+	如果出栈序列的元素是辅助栈的栈顶，则直接弹出即可
+　　如果不是辅助栈的栈顶，则按入栈序列入栈
+　　   如果入栈序列没有即将弹出的元素则返回false
+public boolean IsPopOrder(int [] pushA,int [] popA) {
+	int len1 = pushA.length;
+	int len2 = popA.length;
+	if(pushA==null||popA==null||len1<1||len2<1)
+		return false;
+	Stack<Integer> stack = new Stack<Integer>();
+	int j = 0;
+	for(int i=0;i<len2;i++){
+		int data = popA[i];
+		while(stack.isEmpty()||stack.peek()!=data){
+			if(j==len1)//直到最后一个元素或者栈顶等于出栈元素
+				break;
+			stack.push(pushA[j++]);
+		}
+		if(stack.peek()!=data)//判断栈顶元素
+			break;
+		stack.pop();
+	}
+	if(stack.isEmpty()&&j==len1)
+		return true;
+	return false;
+}2.6 min函数栈（金典p136）
+2.6.1 记录状态法
+基本描述：定义栈的数据结构，请在该类型中实现一个能够得到栈最小元素的min函数。
+记录压入每个节点时栈中的最小值
+class NodeWithMin{
+    int min=0;
+    int value=0;
+    public NodeWithMin(int value,int min){
+        this.min=min;
+        this.value=value;
+    }
+}
+public class MinStack extends Stack<NodeWithMin>{
+    public void push(int node) {
+        int newMin = Math.min(node,min());
+        super.push(new NodeWithMin(node,newMin));
+    }
+    
+    public NodeWithMin pop() {
+        return super.pop();
+    }
+    
+    public int top() {
+        return super.peek().value;
+    }
+    
+    public int min() {
+        if(this.isEmpty())
+            return Integer.MAX_VALUE;
+        else
+            return peek().min;
+    }
+}2.6.2  辅助栈法
+public class MinStack extends Stack<Integer>{
+    Stack<Integer> s = new Stack<Integer>();
+    public void push(int node) {
+        if(node<min())
+            s.push(node);
+        super.push(node);
+    }
+    
+    public Integer pop() {
+        int value=top();
+        if(value==min())
+            s.pop();
+        return super.pop();
+    }
+    
+    public Integer top() {
+        return super.peek();
+    }
+    
+    public int min() {
+        if(s.isEmpty())
+            return Integer.MAX_VALUE;
+        else
+            return s.peek();
+    }
+}2.7 集合栈（金典p137）
+基本描述：请实现一种数据结构SetOfStacks，由多个栈组成，其中每个栈的大小为size，当前一个栈填满时，新建一个栈。该数据结构应支持与普通栈相同的push和pop操作。
+给定一个操作序列int[][2] ope(C++为vector<vector<int>>)，每个操作的第一个数代表操作类型，若为1，则为push操作，后一个数为应push的数字；若为2，则为pop操作，后一个数无意义。请返回一个int[][](C++为vector<vector<int>>)，为完成所有操作后的SetOfStacks，顺序应为从下到上，默认初始的SetOfStacks为空。保证数据合法。
+public class SetOfStacks {
+    public List<ArrayList<Integer>> setOfStacks(int[][] ope, int size) {
+        List<ArrayList<Integer>> stackList =  new ArrayList<ArrayList<Integer>>();
+        if(ope==null||ope.length<1)
+            return stackList;
+        int opeCount=ope.length;
+        ArrayList<Integer> curStack = new ArrayList<Integer>(size);
+        stackList.add(curStack);
+        for(int i=0;i<opeCount;i++){
+            if(ope[i][0]==1){//push操作
+                if(curStack.size()==size){
+                    curStack = new ArrayList<Integer>(size);
+                    stackList.add(curStack);
+                }
+                curStack.add(ope[i][1]);
+            }else{//pop操作
+                if(curStack.size()>0)
+                    curStack.remove(curStack.size()-1);
+                else{
+                    stackList.remove(stackList.size()-1);
+                    curStack = stackList.get(stackList.size()-1);
+                    curStack.remove(curStack.size()-1);
+                }
+            }
+        }
+        return stackList;
+    }
+}2.8 双栈排序(金典p144)
+基本描述：请编写一个程序，按升序对栈进行排序（即最大元素位于栈顶），要求最多只能使用一个额外的栈存放临时数据，但不得将元素复制到别的数据结构中。
+给定一个int[] numbers(C++中为vector&ltint>)，其中第一个元素为栈顶，请返回排序后的栈。请注意这是一个栈，意味着排序过程中你只能访问到第一个元素。
+【基本思想】
+public Stack<Integer> TwoStacks(Stack<Integer> s1){
+	Stack<Integer> s2 = new Stack<Integer>();
+	while(!s1.isEmpty()){
+		int temp = s1.pop();
+		while(!s2.isEmpty()&&s2.peek()>temp){
+			s1.push(s2.pop());
+		}
+		s1.push(temp);
+	}
+}【具体实现】
+public class TwoStacks {
+    public ArrayList<Integer> twoStacksSort(int[] numbers) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        Stack<Integer> s1 =  new Stack<Integer>();
+        Stack<Integer> s2 =  new Stack<Integer>();
+        for(int i=0;i<numbers.length;i++){
+            while(!s1.isEmpty()&&numbers[i]<s1.peek()){
+                s2.push(s1.pop());//若比栈顶元素小，需要查找插入位置
+            }
+            s1.push(numbers[i]);//若比栈顶元素大直接，放到栈顶即可
+            while(!s2.isEmpty()){//将暂存元素放回
+                s1.push(s2.pop());
+            }
+        }
+        while(!s1.isEmpty()){
+            result.add(s1.pop());
+        }
+        return result;
+    }
+}2.9 猫狗收容所（金典p145）
+基本描述：有家动物收容所只收留猫和狗，但有特殊的收养规则，收养人有两种收养方式，第一种为直接收养所有动物中最早进入收容所的，第二种为选择收养的动物类型（猫或狗），并收养该种动物中最早进入收容所的。
+给定一个操作序列int[][2] ope(C++中为vector<vector<int>>)代表所有事件。若第一个元素为1，则代表有动物进入收容所，第二个元素为动物的编号，正数代表狗，负数代表猫；若第一个元素为2，则代表有人收养动物，第二个元素若为0，则采取第一种收养方式，若为1，则指定收养狗，若为-1则指定收养猫。请按顺序返回收养的序列。若出现不合法的操作，即没有可以符合领养要求的动物，则将这次领养操作忽略。 
+public class CatDogAsylum {
+    public ArrayList<Integer> asylum(int[][] ope) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        LinkedList<Animal> dogs = new LinkedList<Animal>();
+        LinkedList<Animal> cats = new LinkedList<Animal>();
+        for(int i=0;i<ope.length;i++){
+            switch (ope[i][0]) {
+                case 1://push
+                	if(ope[i][1]>0)//dog
+                        dogs.offer(new Animal(ope[i][1],i));
+                    else
+                        cats.offer(new Animal(ope[i][1],i));
+                    break;
+                case 2://pop
+                	if(ope[i][1]==1&&!dogs.isEmpty())
+                        result.add(dogs.poll().animalId);
+                    else if(ope[i][1]==-1&&!cats.isEmpty())
+                         result.add(cats.poll().animalId);
+                    else if(ope[i][1]==0){
+                        if(!dogs.isEmpty()&&!cats.isEmpty()){
+                            if(dogs.peek().order<cats.peek().order)
+                                result.add(dogs.poll().animalId);
+                            else
+                                result.add(cats.poll().animalId);
+                        }else if(!cats.isEmpty()){
+                            result.add(cats.poll().animalId);
+                        }else if(!dogs.isEmpty()){
+                            result.add(dogs.poll().animalId);
+                        }
+                    }
+                break;
+            }
+        }
+        return result;
+    }
+}
+class Animal{
+    int animalId;
+    int order;
+    public Animal(int id,int order){
+        this.animalId=id;
+        this.order=order;
+    }
+}
+
+
+
+
+3 树结构
+3.1  二叉排序树构造
+public void buildTree(int[] data){
+	for(int i=0;i<data.length;i++){
+		insert(data[i]);
+	}
+}
+public void insert(int data){
+	Node newNode = new Node(data);
+	if(root==null){
+		root = newNode;
+	}else{
+		Node current = root;
+		Node parent;
+		while(true){//寻找插入位置
+			parent=current;
+			if(data<current.data){
+				current = current.left;
+				if(current==null){
+					parent.left=newNode;
+					return;
+				}
+			}else{
+				current=current.right;
+				if(current==null){
+					parent.right=newNode;
+					return;
+				}
+					
+			}
+		}
+	}
+}3.2  二叉树遍历
+　　二叉树的遍历，就是从根节点出发，按照某种次序依次访问二叉树中的所有节点，并保证每个节点仅被访问一次。二叉树的访问次序不同，最终的遍历结果也就不同。二叉树的遍历方式包括：先序遍历、中序遍历、后序遍历三种。
+　　（1）先序遍历，即先根遍历：根左右。先访问根节点，再访问左节点，最后访问右节点
+　　（2）中序遍历，即中根遍历：左根右。先访问左节点，再访问根节点，最后访问右节点
+　　（3）后序遍历，即后根遍历：左右根。先访问左节点，在访问右节点，最后访问根节点
+　　综上，三种二叉树遍历算法的不同之处在于：访问根节点和遍历左、右子树的先后关系。三种遍历算法的整体过程如下图所示，从图中可以看出：每个节点均可以看成一个根节点，并且每个节点都有三次访问机会如下：
+　　1. 第一次进入根节点，如下图三角形所标识
+　　2. 第二次进入根节点，是从其左子树返回的时候，如下图圆形所标识
+　　3. 第三次进入根节点，是从其右子树返回的时候，如下图正方形所标识
+
+3.2.1  先序遍历
+　　先序遍历的基本思想，先根遍历：根左右。先访问根节点，再访问左节点，最后访问右节点。先序遍历的时机是第一次进入根节点就可访问，由于每个左节点均可看成根节点。所以，当遍历到根节点或者其左节点时均可当成根节点点直接访问。当左子树遍历完毕，便可转到右子树上继续进行先根遍历。如下，先根遍历顺序为：ABDGHCEIF
+
+【递归方式】
+public void preOrder(Node localRoot){
+	if(localRoot!=null){
+		System.out.print(localRoot.data+" ");
+		preOrder(localRoot.left);
+		preOrder(localRoot.right);
+	}
+}【非递归方式】
+public void preTranverse(){
+	Node cur =root;  
+	Stack<Node> stack = new Stack<Node>();  
+	while(cur!=null||!stack.isEmpty()){  
+    	while(cur!=null){//一直访问，并将左子树进栈  
+    		System.out.print(cur.data+" ");  
+        	stack.push(cur);  
+        	cur=cur.left;  
+        } 
+    	//出栈右移
+        cur = stack.pop();  
+        cur = cur.right;  
+    }  
+}3.2.2  中序遍历
+　　中序遍历的基本思想，中根遍历：左根右。先访问根节点，再访问左节点，最后访问右节点。先序遍历的时机是第二次进入根节点才可访问，所以，即使每个根节点的左节点当成根节点处理。但受访问时机约束，必须要等到从该根节点的左子树回溯时才可访问该根节点。所以，不管遍历的是根节点还是其左节点，均不可直接访问，只有一个节点的左子树遍历返回时才可访问。当左子树访问结束，便可转到右子树上继续进行中根遍历。如下，中根遍历顺序为：GDHBAEICF
+
+【递归方式】
+public void inOrder(Node root){
+	if(root!=null){
+		inOrder(root.left);
+		System.out.print(root.data+" ");
+		inOrder(root.right);
+	}
+}【非递归方式】
+public void inTraverse() {
+	  Stack<Node> stack=new Stack<Node>();
+	  Node cur = root;
+	  while(cur!=null || !s.isEmpty()) {//左根右
+		  while(cur!=null) {//
+			  s.push(cur);
+			  cur = cur.left;
+		  }
+		  cur = s.pop();
+	      System.out.print(cur.data+" ");
+	      cur = cur.right;
+	 }
+}3.2.3  后序遍历
+　　后序遍历的基本思想，后根遍历：左根右。先访问根节点，再访问左节点，最后访问右节点。先序遍历的时机是第三次进入根节点才可访问，所以，即使每个根节点的左节点当可成根节点处理。但受访问时机约束，必须要等到从该根节点的右子树回溯时才可访问该根节点。所以，不管遍历的是根节点还是其左节点，均不可直接访问，只有一个节点的左子树和右子树都遍历结束时才可访问。因此后跟遍历过程中，可以通过判断该节点左右子树是否为空，或者左右子树是否已经遍历结束来判断是否访问该节点，否则继续遍历左子树或右子树。如下，后根遍历顺序为：GHDBIEFCA
+
+【递归方式】
+public void postOrder(Node localRoot){
+	if(localRoot!=null){
+		postOrder(localRoot.left);
+		postOrder(localRoot.right);
+		System.out.print(localRoot.data+" ");
+	}
+}【非递归方式】
+public void postTraverse2() {
+	 Stack s = new Stack();
+	 Node cur = null;//当前访问节点
+	 Node pre = null;//上次访问的节点
+	 s.push(root);
+	 while(!s.isEmpty()) {
+		 cur = (Node) s.peek();
+		 if((cur.left==null&&cur.right==null)||(pre!=null&&
+                                 (pre==cur.left||pre==cur.right))){
+			//如果当前结点没有孩子结点或者孩子节点都已被访问过 
+			 System.out.print(cur.data+" ");
+			 s.pop();
+			 pre = cur;
+		 }else{
+			 if(cur.right!=null)
+				 s.push(cur.right);
+			 if(cur.left!=null)
+				 s.push(cur.left);
+		 }
+	 }
+ }http://www.cnblogs.com/dolphin0520/archive/2011/08/25/2153720.html
+3.2.4  层序遍历
+
+public void layerTranverse(){
+	Queue<Node> queue = new LinkedList<Node>();
+	queue.add(root);
+	while(!queue.isEmpty()){
+		Node q = queue.poll();
+		System.out.print(q.data+" ");
+		if(n.left!=null)
+			queue.add(n.left);
+		if(n.right!=null)
+			queue.add(n.right); 
+    } 
+}3.3 5.3 二叉树遍历的应用
+3.3.1  求解二叉树中节点间的最大距离
+描述：二叉树中节点间的最大距离，就是两个节点间边的个数。求解两个节点间的，最大距离。
+public void findMaxDis(Node root){
+	if(root==null)
+		return;
+	if(root.left==null)
+		root.lMaxDis=0;
+	if(root.right==null)
+		root.rMaxDis=0;
+	if(root.left!=null)
+		findMaxDis(root.left);
+	if(root.right!=null)
+		findMaxDis(root.right);
+	//计算左子树
+	if(root.left!=null)
+		root.lMaxDis = Math.max(root.left.lMaxDis, root.left.rMaxDis)+1;
+	//计算右子树
+	if(root.right!=null)
+		root.rMaxDis = Math.max(root.right.lMaxDis, root.right.rMaxDis)+1;
+	//获取二叉树的最大距离
+	if((root.lMaxDis+root.rMaxDis)>maxLen)
+		maxLen=root.lMaxDis+root.rMaxDis;
+}3.3.2  求解树的深度
+描述：二叉树中节点间的最大距离，就是两个节点间边的个数。求解两个节点间的，最大距离。
+public static int deptTree(Node root){
+	if(root==null)
+		return 0;
+	int dl = deptTree(root.left);
+	int dr = deptTree(root.right);
+	return (dl>dr?dl:dr)+1;	
+}【非递归】
+public int TreeDepth(TreeNode pRoot){
+	if(pRoot==null)
+        return 0;
+	int depth=0;
+    Queue<TreeNode> queue = new LinkedList<TreeNode>();
+    queue.add(pRoot);
+    while(!queue.isEmpty()){
+        depth++;
+        int i=0,n=queue.size();
+        while(i<n){
+            TreeNode node = queue.poll();
+            if(node.left!=null)
+                queue.offer(node.left);
+            if(node.right!=null)
+                queue.offer(node.right);
+            i++;
+        }
+	}
+    return depth;
+}3.3.3  判断一个树是否为平衡二叉树
+描述：二叉树中节点间的最大距离，就是两个节点间边的个数。求解两个节点间的，最大距离。
+public class Solution {
+    //后续遍历时，遍历到一个节点，其左右子树已经遍历依次自底向上判断，每个节点只需要遍历一次
+    private boolean isBalanced=true;
+    public boolean IsBalanced_Solution(TreeNode root) {
+        getDepth(root);
+        return isBalanced;
+    }
+    public int getDepth(TreeNode root){
+        if(root==null)
+            return 0;
+        int left=getDepth(root.left);
+        int right=getDepth(root.right);
+        if(Math.abs(left-right)>1){
+            isBalanced=false;
+        }
+        return right>left ?right+1:left+1;
+         
+    }
+}3.3.4 求解节点数量
+public static int nodeNum(Node root){
+	if(root==null)
+		return 0;
+	int nl = nodeNum(root.left);
+	int nr = nodeNum(root.right);
+	return nl+nr+1;
+}3.3.5  求解叶子节点数量
+public static int leafNodeNum(Node root){
+	if(root==null)
+		return 0;
+	if(root.left==null&&root.right==null)
+		return 1;
+	int nl = leafNodeNum(root.left);
+	int nr = leafNodeNum(root.right);
+	return nl+nr;
+}3.4  二叉搜索树的后序遍历序列
+3.4.1  递归方式
+public static boolean VerifySquenceOfBST(int[] a) {
+    if(a==null||a.length==0)
+        return false;
+    int len= a.length;
+　　int root=a[len-1];
+　　//判断左子树
+    int i=0;
+    for(;i<len-1;i++)
+        if(a[i]>root)
+            break;
+　　//判断右子树
+    int j=i;
+    for(;j<len-1;j++)
+        if(a[j]<root)
+            return false;
+　　//判断左、右子树
+    boolean left=true;
+    boolean right=true;
+    if(i>0)
+        left=VerifySquenceOfBST(Arrays.copyOfRange(a, 0, i));
+    if(i<len-1)
+        right=VerifySquenceOfBST(Arrays.copyOfRange(a, i, len-1));//去掉了根节点
+    return (left&&right);
+}3.4.2   非递归方式
+public static boolean VerifySquenceOfBST2(int[] a) {
+	int len = a.length, end = len-1;
+	if(a==null||len==0)
+		return false;
+　　while(end >0){
+　　    int i = 0;	
+		while(i<len&&a[i++]<a[end]);
+		while(i<len&&a[i++]>a[end]);
+		if(i<end)
+			return false;
+        end--;	}
+}3.5  求先后序列
+3.5.1   根据先序、中序求后序
+public Node initPostTree(int[] preOrder,int s1,int e1,int[] inOrder,int s2,int e2){
+	//1. 边界判断
+	if(s1>e1||s2>e2)
+		return null;
+	//2. 创建根节点
+	int rootData = preOrder[s1];//此处不是0
+	Node head = new Node(rootData);
+	//3. 获取根索引和偏移量
+	int index = findRootIndex(rootData,inOrder,s2,e2);//中序找
+	int offset = index-start2-1;//从中序当中找到的
+	//4. 构建左子树
+	Node left = initPostTree(preOrder, s1+1, s1+1+offset, inOrder, s2, index-1);
+	//5. 构建右子树
+	Node right = initPostTree(preOrder, s1+2+offset, e1, inOrder, index+1, e2);
+	head.left=left;
+	head.right=right;
+	return head; 
+}3.5.2  根据后序、中序求先序
+public Node initPreTree(int[] postOrder,int s1,int e1,int[] inOrder,int s2,int e2){
+	//1. 边界判断
+	if(s1>e1||s2>e2)
+		return null;
+	//2. 创建根节点
+	int rootData = postOrder[e1];//此处不是0
+	Node head = new Node(rootData);
+	//3. 获取根索引和偏移量
+	int index = findRootIndex(rootData,inOrder,s2,e2);//中序找
+	int offset = index-s2-1;//从中序当中找到的
+	//4. 构建左子树
+	Node left = initPreTree(postOrder, s1, s1+offset, inOrder, s2, index-1);
+	//5. 构建右子树
+	Node right = initPreTree(postOrder, s1+offset+1, e1-1, inOrder, index+1, e2);
+	head.left=left;
+	head.right=right;
+	return head;
+}3.5.3  查找根节点
+public int findRootIndex(int rootData,int[] inOrder,int start,int end) {
+	for(int i=start;i<=end;i++)//i<=end
+		if(rootData==inOrder[i]){
+			return i;
+		}
+	return -1;
+}http://www.cnblogs.com/maomaohhmm/archive/2012/09/10/2679320.html
+3.6  二叉排序树与双向链表
+3.6.1  递归方式（中序遍历）
+TreeNode rear= null;
+TreeNode head = null;
+public TreeNode Convert(TreeNode pRootOfTree) {
+    ConvertSub(pRootOfTree);
+    return head;
+}
+private void ConvertSub(TreeNode pRootOfTree) {
+    if(pRootOfTree==null) 
+        return;
+      //左子树遍历，从左子树出来后会回到，当前的根节点 
+    ConvertSub(pRootOfTree.left); 
+    if (head == null) {
+        head = pRootOfTree;
+        rear = pRootOfTree;
+    } else {
+        rear.right = pRootOfTree;
+        pRootOfTree.left = rear;
+        rear = pRootOfTree;
+     }
+     //右子树遍历，从右子树出来后会回到，上一个根节点
+    ConvertSub(pRootOfTree.right); 
+}3.6.2  非递归方式（中序遍历）
+public TreeNode Convert(TreeNode pRootOfTree) {
+    ConvertSub(pRootOfTree);
+    return head;
+}
+private void ConvertSub(TreeNode pRootOfTree) {
+    if(pRootOfTree==null) 
+        return;
+    Stack<TreeNode> s = new Stack<TreeNode>();
+    TreeNode cur = pRootOfTree;
+    while(cur!=null||!s.isEmpty()){
+        while(cur!=null){
+            s.push(cur);
+            cur = cur.left;
+        }
+        cur = s.pop();
+        if(head==null){
+            head=cur;
+            rear=cur;
+        }else{
+            rear.right=cur;
+            cur.left=rear;
+            rear = cur;
+        }
+        cur = cur.right;   
+    }
+}3.7 按之字形顺序打印二叉树
+请实现一个函数按照之字形打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右至左的顺序打印，第三行按照从左到右的顺序打印，其他行以此类推。
+public ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
+	ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+	if(pRoot==null)
+		return result;
+	ArrayList<Integer> layer = new ArrayList<Integer>();
+	Stack<TreeNode>[] levels = new Stack[2];
+    levels[0]=new Stack<TreeNode>();
+    levels[1]=new Stack<TreeNode>();
+	int c=0,n=1;
+	levels[c].push(pRoot);
+	while(!levels[0].isEmpty()||!levels[1].isEmpty()){
+		TreeNode node = levels[c].pop();
+		layer.add(node.val);
+		if(c==0){
+			if(node.left!=null)
+				levels[n].push(node.left);
+			if(node.right!=null)
+				levels[n].push(node.right);
+		}else{
+			if(node.right!=null)
+				levels[n].push(node.right);
+			if(node.left!=null)
+				levels[n].push(node.left);
+		}
+		if(levels[c].isEmpty()){
+            result.add(layer);
+            layer = new ArrayList<Integer>();
+            
+			c=1-c;
+			n=1-n;
+		}
+	}
+	return result;	
+}3.8 二叉搜索树的第k个结点
+给定一颗二叉搜索树，请找出其中的第k大的结点。例如， 5 / \ 3 7 /\ /\ 2 4 6 8 中，按结点数值大小顺序第三个结点的值为4。
+TreeNode KthNode(TreeNode pRoot, int k){
+    Stack<TreeNode> s = new Stack<TreeNode>();
+    TreeNode cur = pRoot;
+    int count=0;
+    while(cur!=null||!s.isEmpty()){
+        while(cur!=null){
+            s.push(cur);
+            cur = cur.left;
+        }
+        cur = s.pop();
+        count++;
+        if(count==k)
+            return cur;
+        cur = cur.right;
+    }
+    return null;
+}3.9 镜像二叉树
+操作给定的二叉树，将其变换为源二叉树的镜像。
+
+public static void Mirror(TreeNode root) {
+    if(root==null||(root.left==null&&root.right==null))
+        return;
+    Stack<TreeNode> s = new Stack<TreeNode>();
+    TreeNode cur=root;
+    while(cur!=null||!s.isEmpty()){  
+    	while(cur!=null){
+            TreeNode temp = cur.left;
+            cur.left = cur.right;
+            cur.right = temp;
+            s.push(cur);
+            cur=cur.left;
+    	}
+        //出栈右移
+        cur = s.pop();  
+        cur = cur.right;  
+    }
+}3.10 对称的二叉树
+	请实现一个函数，用来判断一颗二叉树是不是对称的。注意，如果一个二叉树同此二叉树的镜像是同样的，定义其为对称的。
+3.10.1 递归
+boolean isSymmetrical(TreeNode pRoot){
+    return isSymmetrical(pRoot,pRoot);
+}
+boolean isSymmetrical(TreeNode pRoot1,TreeNode pRoot2){
+    if(pRoot1==null&&pRoot2==null)
+        return true;
+    if(pRoot1==null||pRoot2==null)
+        return false;
+    if(pRoot1.val!=pRoot2.val)
+        return false;
+　　return isSymmetrical(pRoot1.left,pRoot2.right)
+　　        &&isSymmetrical(pRoot1.right,pRoot2.left);
+}3.10.2 非递归
+boolean isSymmetrical(TreeNode pRoot1,TreeNode pRoot2){
+    if(pRoot1==null&&pRoot2==null)
+        return true;
+    if(pRoot1==null||pRoot2==null)
+        return false;
+    Stack<TreeNode> s1 = new Stack<TreeNode>();
+    Stack<TreeNode> s2 = new Stack<TreeNode>();
+	TreeNode cur1=pRoot1;
+    TreeNode cur2=pRoot2;
+    while((cur1!=null&&cur2!=null)||(!s1.isEmpty()&&!s2.isEmpty())){  
+        while(cur1!=null&&cur2!=null){
+            if(cur1.val!=cur2.val)
+        		return false;
+            s1.push(cur1);
+            s2.push(cur2);
+            cur1=cur1.left;
+            cur2=cur2.right;
+        }
+        //出栈右移
+        cur1 = s1.pop();  
+        cur2 = s2.pop(); 
+        cur1=cur1.right;
+        cur2=cur2.left;
+    }
+	if(cur1==null&&cur2==null)
+    	return true;
+    else
+        return false;
+}3.11  二叉树打印多行
+从上到下按层打印二叉树，同一层结点从左至右输出。每一层输出一行。
+ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
+    Queue<TreeNode> queue = new ArrayDeque<TreeNode>();
+    ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+    ArrayList<Integer> layer = new ArrayList<Integer>();    
+    if(pRoot==null)
+	    return result;
+    queue.offer(pRoot);
+    int nLevel=0,level=1;
+    while(!queue.isEmpty()){
+        TreeNode node = queue.peek();
+        layer.add(node.val);
+        if(node.left!=null){
+            queue.offer(node.left);
+            ++nLevel;
+        }
+        if(node.right!=null){
+            queue.offer(node.right);
+            ++nLevel;
+        }
+        queue.poll();
+        level--;
+        if(level==0){
+            result.add(layer);
+            layer = new ArrayList<Integer>();
+            level=nLevel;
+            nLevel=0;
+        }
+    }
+    return result;
+}  3.12 二叉树序列化
+public int index = -1;
+String Serialize(TreeNode root) {
+    StringBuffer sb = new StringBuffer();
+    if(root == null){
+        sb.append("#,");
+        return sb.toString();
+    }
+    sb.append(root.val + ",");
+    sb.append(Serialize(root.left));
+    sb.append(Serialize(root.right));
+    return sb.toString();
+}
+TreeNode Deserialize(String str) {
+    index++;
+   int len = str.length();
+    if(index >= len){
+        return null;
+    }
+    String[] strr = str.split(",");
+    TreeNode node = null;
+    if(!strr[index].equals("#")){
+        node = new TreeNode(Integer.valueOf(strr[index]));
+        node.left = Deserialize(str);
+        node.right = Deserialize(str);
+    }
+     
+    return node;
+}3.13 二叉树的下一个结点
+	给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。
+public TreeLinkNode GetNext(TreeLinkNode pNode){
+    if(pNode==null){
+        return null;
+    }
+    TreeLinkNode pNext=null;
+    if(pNode.right!=null){//右子树不为空
+        TreeLinkNode pRight = pNode.right;
+        while(pRight.left != null)
+            pRight = pRight.left;
+        pNext = pRight;
+    }else{//右子树为空，查看父节点
+        TreeLinkNode c = pNode;
+        TreeLinkNode p = pNode.next;
+        while(p != null&&c==p.right){
+            c=p;
+            p=p.next;
+        }
+        pNext=p;
+    }
+    return pNext;
+}3.14  树的子结构
+输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构）
+public boolean HasSubtree(TreeNode root1,TreeNode root2) {
+    boolean result = false;
+    if(root1!=null&&root2!=null){
+        if(root1.val==root2.val)
+            result = HaveTree(root1,root2);
+        if(!result)
+            result = HasSubtree(root1.left,root2);
+        if(!result)
+            result = HasSubtree(root1.right,root2);
+    }
+    return result;
+}
+public boolean HaveTree(TreeNode root1,TreeNode root2) {
+     if(root2==null)//必须先判断2
+         return true;
+     if(root1==null)
+         return false;
+     if(root1.val!=root2.val)
+         return false;
+     return HaveTree(root1.left,root2.left)&&HaveTree(root1.right,root2.right);
+     
+}3.15 二叉树中和为某一值的路径
+输入一颗二叉树和一个整数，打印出二叉树中结点值的和为输入整数的所有路径。路径定义为从树的根结点开始往下一直到叶结点所经过的结点形成一条路径。
+private ArrayList<ArrayList<Integer>> listAll = new ArrayList<ArrayList<Integer>>();
+private ArrayList<Integer> list = new ArrayList<Integer>();
+public ArrayList<ArrayList<Integer>> FindPath(TreeNode root,int target) {
+    if(root == null) return listAll;
+    list.add(root.val);
+    target -= root.val;
+    if(target == 0 && root.left == null && root.right == null)
+        listAll.add(new ArrayList<Integer>(list));
+    FindPath(root.left, target);
+    FindPath(root.right, target);
+    list.remove(list.size()-1);
+    return listAll;
+}
+
+
+
+
+
+
+4 图结构
+4.1 图的构造
+4.1.1 邻接矩阵
+【存储结构】
+public class Graph {
+	public Object[] nodes;  //节点信息
+    public int[][] edges;   //邻接矩阵，用来存储边
+    public int n;           //节点个数
+
+    public Graph(int n){
+    	this.nodes = new Object[n];
+    	this.edges = new int[n][n];
+    	this.n = n;
+    }
+    
+    public void addNode(int index,Object node){
+    	this.nodes[index] = node;
+    }
+    
+    public void addEdge(int i,int j){
+    	edges[i][j]=1;
+    } 
+}【图的构造】
+public Graph buildGraph(int n){
+	Graph g = new Graph(n);
+	//设置顶点信息
+	for(int i=0;i<n;i++)
+		g.addNode(i,(char)(65+i));
+	g.addEdge(0,1);   g.addEdge(0,2);
+	g.addEdge(1,3);   g.addEdge(1,4);
+	g.addEdge(3,7);   g.addEdge(4,7);
+	g.addEdge(2,5);   g.addEdge(2,6);
+	return g;
+}4.1.2 邻接表法
+【存储结构】
+class EdgeNode{//边节点
+	int adjvex;   //邻接点域，邻接顶点下标
+	EdgeNode next;//指针域，下一个邻接点
+	public EdgeNode(int adj){
+		this.adjvex = adj;
+	}
+}
+class VertexNode{//顶点
+	Object data;  //顶点域，顶点信息
+	EdgeNode firstEdge;//边表头指针
+	public VertexNode(Object data){
+		this.data = data;
+	}
+}
+public class GraphList{
+	public VertexNode[] nodes;     //节点信息
+    public int n; 
+    public GraphList(int n){
+    	this.nodes = new VertexNode[n];
+    	this.n = n;
+    }
+    public void addNode(int index,Object data){
+    	VertexNode node = new VertexNode(data);
+    	nodes[index] = node;
+    }
+    public void addEdge(int i,int j){
+    	EdgeNode e1 = new EdgeNode(j);
+    	e1.next = nodes[i].firstEdge;
+    	nodes[i].firstEdge=e1;
+    	
+    	EdgeNode e2 = new EdgeNode(i);
+    	e2.next = nodes[j].firstEdge;
+    	nodes[j].firstEdge = e2;
+    } 
+}【图的构造】
+public GraphList buildGraphList(int n){
+	GraphList g = new GraphList(n);
+	//设置顶点信息
+	for(int i=0;i<n;i++)
+		g.addNode(i,(char)(65+i));
+	g.addEdge(0,1);    g.addEdge(0,2);
+	g.addEdge(1,3);    g.addEdge(1,4);
+	g.addEdge(3,7);    g.addEdge(4,7);
+	g.addEdge(2,5);    g.addEdge(2,6);
+	return g;
+}4.2 图的遍历
+	图的遍历是和树的遍历类似，即从图中某一顶点出发访遍图中其余顶点，且使每一个顶点仅被访问一次，这一过程就叫做图的遍历(Traversing Graph )。
+	关于图的遍历，需要科学地设计遍历方案，来避免因回路陷入死循环。一般会设置一个visited[n] 访问数组，来标识图中顶点是否被访问过。通常有两种遍历次序方案：深度优先遍历和广度优先遍历。
+4.2.1 深度优先遍历DFS
+	深度优先遍历DFS (Depth First Search)，类似于树的先根遍历，尽可能深的去访问节点。DFS算法步骤如下所示：
+	步骤1：访问节点，将该节点标记为已访问。
+	步骤2：如果节点还有未标记的邻接点，继续步骤1，否则返回。
+
+【递归遍历】//A B D H E C F G
+public void depthTraverse(Graph g){
+	int n = g.n;
+	boolean[] visited = new boolean[n];//默认初始化为false
+	for(int i=0;i<n;i++){//遍历非连通图的极大连通子图
+		if(!visited[i])
+			DFS(g,i,visited);//从图g的第i个点开始遍历
+	}
+}
+
+public void DFS(Graph g, int i,boolean[] visited) {
+	int n = g.n;
+	System.out.print(g.nodes[i]+" ");//从i节点开始遍历，则先访问i节点
+	visited[i] = true;//设置访问标识
+	//访问i的下一个邻接点
+	for(int j=0;j<n;j++)
+		if(g.edges[i][j]>0&&!visited[j])
+			DFS(g, j,visited);
+}【递归遍历】邻接表法//A C G F B E H D
+public void depthTraverseList(GraphList g){
+	int n = g.n;
+	boolean[] visited = new boolean[n];//默认初始化为false
+	for(int i=0;i<n;i++){//遍历非连通图的极大连通子图
+		if(!visited[i])
+			DFSList(g,i,visited);//从图g的第i个点开始遍历
+	}
+}
+public void DFSList(GraphList g, int i,boolean[] visited) {
+	int n = g.n;
+	System.out.print(g.nodes[i].data+" ");//从i节点开始遍历，则先访问i节点
+	visited[i] = true;//设置访问标识
+	EdgeNode cur = g.nodes[i].firstEdge;
+	while(cur!=null){
+		if(!visited[cur.adjvex])
+			DFSList(g,cur.adjvex,visited);
+		cur = cur.next;
+	}
+}【非递归遍历】A C G F B E H D
+public void depthTraverse2(Graph g) {
+	int n = g.n;
+	boolean[] visited = new boolean[n];//默认初始化为false
+	Stack<Integer> s = new Stack<Integer>();
+	for (int i = 0; i < n; i++) {
+		if (!visited[i]) {
+			// 设置第i个元素已经进栈
+			s.push(i);
+			visited[i] = true;
+			while (!s.isEmpty()) {
+				int j = s.pop();
+				System.out.print(g.nodes[j]+" ");
+				for(int k=0;k<n;k++)
+					if(g.edges[j][k]>0&&!visited[k]){
+						s.push(k);
+						visited[k] = true;
+					}
+			}
+	    }
+	}
+}4.2.2 广度优先遍历BFS
+	广度优先遍历DFS (Breadth First Search)，类似于树的层序遍历。如下图所示，按level来遍历，一层一层的遍历。
+
+	和树的层序遍历一样，采用队列结构来实现图的遍历，队列结构如下图所示：
+
+	图的BFS步骤如下：
+	步骤1：如果队列为空，则返回，否则，取出队列头节点，将该节点标记为已访问。
+	步骤2：同时，将该节点所有未标记的邻接点，加入队列尾，继续步骤1。
+public void BFS(Graph g) {// A B C D E F G H
+	int n = g.n;
+	Deque<Integer> queue = new ArrayDeque<Integer>(n);
+	boolean[] visited = new boolean[n];//默认初始化为false
+	for (int i = 0; i < n; i++) {
+		if (!visited[i]) {
+			// 设置第i个元素已经进栈
+			visited[i] = true;
+			queue.offer(i);
+			while(!queue.isEmpty()) {
+				int j = queue.poll();
+				System.out.print(g.nodes[j]+" ");
+				for(int k=0;k<n;k++)
+					if(g.edges[j][k]>0&&!visited[k]){
+						queue.offer(k);
+						visited[k] = true;
+					}
+			}
+	    }
+	}
+}4.3 图的应用
+4.3.1 字符串变换（BFS）
+基本描述：["abc","adc","bdc","aaa”],4,   ”abc",    "bdc"
+          abc===>bdc一共需要4步变换
+
+public int countChanges(String[] dic, int n, String s, String t) {
+    if(dic==null || n==0){
+        return 0;
+　　}    
+    //记录访问过的string,同时可以判断某个string是否访问过
+　　HashSet<String> map = new HashSet();  
+　　Queue<String> queue = new LinkedList<String>();
+    queue.offer(s);
+    map.add(s);
+    int step=0; // 从0开始
+    while(!queue.isEmpty()){
+        step++;  // 每进入循环一次，即步长+1
+        int size = queue.size();
+        for(int i=0;i<size;i++){  // 同一个level
+            String cur = queue.poll();
+            for(String next: getNext(cur,dic)){ // 满足条件的变换了的字符串
+                if(map.contains(next))
+                    continue;                
+                if(next.equals(t))//找到t字符串了就return
+        			return step;
+                queue.offer(next); // 继续下一步的查找
+                map.add(next);
+            }
+        }
+    }
+    return 0;
+}
+ private List<String> getNext(String word, String[] dic){
+    List<String> result = new ArrayList<String>();
+    if(dic==null || dic.length==0) 
+        return result;
+    //由于dic中有重复的字符串，使用HashSet来去掉重复的
+　　Set<String> set=new HashSet<String>();      
+　　for(String s:dic)
+        set.add(s);      
+    for(char ch='a';ch<='z';ch++){
+        for(int i=0;i<word.length();i++){
+            if(word.charAt(i)==ch)
+                continue;
+            String newWord = replace(word,i,ch);
+            if(set.contains(newWord))
+                result.add(newWord);
+        }
+    }       
+    return result;
+}
+ private String replace(String s,int i, char ch){
+    char[] arr = s.toCharArray();
+    arr[i] = ch;
+    return new String(arr);
+}4.3.2 按要求打印数组排列情况（DFS）
+描述：针对1、2、2、3、4、5这6个数，打印所有全排列，要求4不能出现在第3位，3与5不能相连
+	1. 以1、2、2、3、4、5为节点构造一个无相连通图，其中3，5不连通
+　　2. 分别从这6个点进行深度优先遍历
+　　   2.1 把每次遍历的路径记录下来，若第三位不是4则加入set
+　　3. 遍历set集合打印路径
+　　分别从不同的节点出发进行，深度优先遍历
+　　[0][0]  [0][1]  [0][2]  [0][3]  [0][4]  [0][5]
+　　[1][0]  [1][1]  [1][2]  [1][3]  [1][4]  [1][5]
+　　[2][0]  [2][1]  [2][2]  [2][3]  [2][4]  [2][5]
+　　[3][0]  [3][1]  [3][2]  [3][3]  [3][4]  [3][5]
+　　[4][0]  [4][1]  [4][2]  [4][3]  [4][4]  [4][5]
+　　[5][0]  [5][1]  [5][2]  [5][3]  [5][4]  [5][5]
+　　graph无向连通图矩阵仅仅表示了两点是否可达
+　　visited表示一个点是否已经被访问
+public static Set getAllCombines(){
+	buildGraph();//构造图
+	HashSet<String> set = new HashSet<String>();
+	for(int i=0;i<n;i++)//从不同节点遍历
+		depthFirstSearch(i, set);
+	return set;
+}
+public static void depthFirstSearch(int start,Set<String> set){
+	combines += numbers[start];
+    visited[start]=true;
+	if(combines.length()==n){
+		if(combines.indexOf('4')!=2)
+			set.add(combines);
+	}
+	for(int j=0;j<n;j++){
+		if(graph[start][j]==1&&visited[j]==false){//可达并且没有被访问
+			depthFirstSearch(j, set);
+		}
+	}
+	/**
+	 * 后面两步为，在递归最深层次后，开始往回退，把路径和访问表示还原，
+	 * 进行下一轮点的遍历也就是getAllCombines中，i+1的情况
+	 * 1. 只有递归到最深层次最后两句代码才会执行,
+          遍历到4时前面所有点都已被访问，不再递归开始回退
+	 * 2. 5->1->2->2->3->4  visit[5]=false;
+	 * 3. 5->1->2->2->3     visit[4]=false;
+	 * 4. 5->1->2->2        visit[3]=false;
+	 * 5. 5->1->2           visit[2]=false;
+	 * 6. 5->1              visit[1]=false;
+	 * 7. 5                 visit[0]=false;
+	 */
+	combines=combines.substring(0,combines.length()-1);
+	visited[start]=false;
+}
+public static void buildGraph() {
+	for(int i=0;i<n;i++)
+		for(int j=0;j<n;j++){
+			if(i==j)
+				graph[i][j]=0;
+			else
+				graph[i][j]=1;
+		}
+		graph[3][5]=0;
+		graph[5][3]=0;
+}
+
+
+
+
+5 数组
+5.1  求素数
+5.1.1 判断素数
+public static boolean isPrime(int n){
+	if(n < 2) 
+    	return false;
+　　if(n = 2)
+　　    return true;
+    for(int i=2; i<=Math.sqrt(n); i+=2)//注意是小于等于开根号
+    	if(n%i == 0) 
+    		return false;
+    return true;
+}5.1.2 范围内素数
+public static boolean[] sievePrime(int n){
+	boolean[] flag = new boolean[n+1];
+	flag[1]=false;
+	Arrays.fill(flag, 2,n+1,true);
+	for(int i=2;i<=Math.sqrt(n);i++){
+		if(flag[i])
+			for(int j=i;j*i<=n;j++)
+				flag[j*i]=false;
+	}
+	return flag;
+}http://www.zhihu.com/question/29821539
+5.1.3 水仙花数
+	private static int suixianhua(int num) {
+		int mod =0,ans=0;
+		while(num>0){
+			mod = num%10;
+			ans  += mod *mod *mod;
+			num /= 10;
+		}
+		return ans;
+	}5.2  查找数组中最大最小值
+5.2.1  三个数求最大最小值
+if(a > b) {t = a; a = b; b = t;}
+if(a > c) {t = a; a = c; c = t;}
+if(b > c) {t = b; b = c; c = t;}5.2.2  求最大最小值
+//双元素、双下标求最大最小值
+public static void  getMaxMin(int[] a){
+	max=a[0];min=a[0];
+	int len = a.length;
+	for(int i=1;i<=len-1;i+=2){
+		if(i+1>len-1){//只剩一个点分min、max两种情况考虑
+			if(a[i]<min)
+				min=a[i];
+			if(a[i]>max)
+				max=a[i];
+		}else{//两个点的话，两个点分别按min、max两种情况考虑
+			if(a[i]<a[i+1]){
+				if(a[i]<min)
+					min=a[i];
+				if(a[i+1]>max)
+					max=a[i+1];
+			}else{
+				if(a[i]>max)
+					max=a[i];
+				if(a[i+1]<min)
+					min=a[i+1];
+			}
+		}
+	}
+}5.3  第二大数 
+//求数组第二大数
+public static int getSecMax(int[] a){
+	int max1=a[0],max2=Integer.MIN_VALUE;
+	int len = a.length;
+	for(int i =1;i<len;i++){
+		if(a[i]>=max1){//递增情况
+			max2=max1;
+			max1=a[i];
+		}else{//递减情况
+			if(a[i]>max2)
+				max2=a[i];
+		}
+	}
+	return max2;
+}
+
+5.4  子数组最大之和(动态规划)(金典p319)
+描述：对数组中由一个或多个连续元素组成的子集进行求和，返回子集的和为最大的值，如下：
+      {1,-2,4,8,-4,7,-1,-5}中的一个连续子集{4,8-,4,7}，所有连续子集中，该集合的值最大
+5.4.1  三重循环法
+public int FindGreatestSumOfSubArray(int[] a) {
+    if(a==null||a.length<1)
+        return 0;
+    int len = a.length;
+	int ThisSum = Integer.MIN_VALUE,maxSum = Integer.MIN_VALUE;
+	for(int i =0;i<len;i++ )
+		for(int j=i;j<len;j++){
+			ThisSum = 0;
+			for(int k=i;k<=j;k++)
+				ThisSum+=a[k];
+			if(ThisSum > maxSum)
+				maxSum = ThisSum;
+		}
+    return maxSum;
+}5.4.2  组合法
+public int FindGreatestSumOfSubArray(int[] a) {
+    if(a==null||a.length<1)
+        return 0;
+    int sum = 0,maxSum = Integer.MIN_VALUE;
+    int len = a.length;
+    for(int i=0;i<len;i++){
+        sum=0;
+        for(int j=i;j<len;j++){
+            sum +=a[j];//加的是a[j]
+            if(sum>maxSum)
+                maxSum = sum;
+        }
+    }
+    return maxSum;
+}5.4.3  动态规划O(n)
+    if(a==null||a.length<1) //[0,i+1]范围内最大和All[i+1]有两种情况
+        return 0;     //1.最大和的子数组不包含最后元素a[i+1],在[0,i]范围内记为All[i]
+    int len = a.length; //2.若最大和的子数组包含最后元素a[i+1]，则又有两种情况
+    int end = a[0],all = a[0];//2.1 新增元素a[i+1]本身就是最大值
+    for(int i=1;i<len;i++){   //2.2 新增元素a[i+1]与前面部分的组合,end[i]+a[i]
+        end = Math.max(end+a[i],a[i]);//包括a[i]的最小值
+        all = Math.max(all,end);
+    }
+    return all;5.4.4  附带位置O(n)
+public int FindGreatestSumOfSubArray(int[] a) {
+    if(a==null||a.length<1)
+        return 0;
+    int len = a.length;
+   	int maxSum = Integer.MIN_VALUE;
+    int maxStart = 0,int maxEnd = 0;//最大子数组和的起始位置和终止位置
+    int nSum = 0,nStart = 0 ;//累加和以及累加和的起始位置
+    for(int i=0;i<len;i++){//从不同位置累加
+        if(nSum<0){//累加和小于0则更新
+            nSum = a[i];
+            nStart = i;
+        }else{//否则一直累加
+            nSum+=a[i];
+        }
+        if(nSum>maxSum){//根据累加和判断最大累加和
+            maxSum = nSum;
+            maxStart = nStart;
+            maxEnd = i;
+        }
+    }
+    return maxSum;
+}5.5  求解数对之差的最大值(动态规划)
+描述：用数组中的一个数，减去其右边的一个数得到差值，求该差值的最小值
+      {1,4,17,3,2,9}，差值最大为17-2为15
+基本思想：动态规划
+         diff[i]: 前i+1个元素数组的最大差值
+         max[i]: 前i+1个元素数组中的最大值
+         假设diff[i]已经求到则，diff[i+1]可能有如下两种情况
+         1. 在[0,i+1]范围内的最大差值，还是[0,i]范围内的最大差值，也就是说新增的元素a[i+1]没起作用
+         2. 新增的元素a[i+1]起作用了，那么此时[0,i+1]范围内的最大差值为max[i]
+         由可以得出动态规划的递推公式如下：
+          diff[i+1] = max(diff[i],max[i]-a[i+1])
+          max[i+1] = max(max[i],a[i+1]);
+public static int getMaxDiff(int[] a){
+	int len = a.length;
+	if(a==null||len<=1)
+		return Integer.MIN_VALUE;
+	int diff=max=a[0];
+	for(int i=1;i<len;i++){
+		diff = Math.max(diff, max-a[i]);
+		max = Math.max(max, a[i]);
+	}
+	return diff;
+}5.6  数组中组合数为num的组合
+基本描述：输入一个递增排序的数组和一个数字Sum，在数组中查找两个数使得他们的和正好是Sum，如果有多对数字的和等于S，输出两个数的乘积最小的。
+基本原理：找到两组满足条件的数组对(x，y)、(x+a,y-a)，其中（x+y=S, 0<a<y-x）
+	1. x*y-[(x+a)(y-a)]
+	  =x*y-x*y-(y-x)a+a2
+      =a[a-(y-x)]
+    2. 因为0<a<y-x,所以a-(y-x)<0,所以a[a-(y-x)]<0
+    3. 因此(x,y)乘积一定比(x+a,y-a)小
+5.6.1  排序法O(nlog2n+n)
+public static void getSum(int[] a,int sum){
+	Arrays.sort(a);//先对数组进行排序
+	int begin=0,end=a.length-1;//不要习惯性的初始为0
+	while(begin<end){
+		if(a[begin]+a[end]>sum)
+			end--;
+		else if(a[begin]+a[end]<sum)
+			begin++;
+		else{//不要总是误将下标当成数组元素使用
+			System.out.println("begin: "+a[begin]+" end: "+a[end]);
+			begin++;
+			end--;
+		}
+	}
+}5.6.2  HashMap法O(n+n)
+public static void getCombine(int[] a,int sum){
+	Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+	int len = a.length;
+	for(int i=0;i<len;i++)
+		map.put(a[i],sum-a[i]);
+	for(int i=0;i<len;i++){
+		if(map.containsKey(sum-a[i]))
+			System.out.println(a[i]+","+map.get(a[i]));
+	}
+}5.7 求和为s的连续有序的段的个数
+基本思想：1. small和big分别表示当前连续有序段的最小值和最大值
+		  2. small+big > s，small++ 减少段的长度，去掉有序段的较小值            
+            small+big < s，big++   增加段的长度，增加有序段的最大值
+          3. small = (s+1)/2终止
+public ArrayList<ArrayList<Integer> > FindContinuousSequence(int sum) {
+    ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+    if(sum<3)
+        return result;
+    int low=1,high=2,curSum=low+high;
+    while(low<(sum+1)/2){
+        if(curSum==sum){
+            ArrayList<Integer> list = new ArrayList<Integer>();//每次新建，不用清空
+            for(int i=low;i<=high;i++)//从low开始是动态的
+                list.add(i);
+            result.add(list);
+            //下一种轮可能序列
+            curSum -= low;
+            low ++;
+        }else if(curSum>sum){
+            curSum -= low;//减少序列元素
+            low ++;
+        }else{
+            high++;
+            curSum += high;//增加序列元素
+        }
+    }
+    return result;
+}5.8  找出数组中重复元素最多的数
+5.8.1  空间换时间
+	设数组中最大数为MAX，定义一个数组count[MAX],循环设置count[A[i]]++,在count数组中，查找最大数下标为重复最多的数。
+5.8.2   Map映射表
+//找出词频最高的词汇
+public static int getMaxFrequent(int[] a){
+	int len = a.length;
+	//单词统计
+	Map<Integer,Integer> map = new HashMap<>();
+	for(int i=0;i<len;i++){
+		if(map.containsKey(a[i]))//是a[i],不是i,i只是数组下标
+			map.put(a[i], map.get(a[i])+1);
+		else
+			map.put(a[i], 1);
+	}
+	//找最高词频
+	int maxValue = Integer.MIN_VALUE;
+	int maxIndex = 0;
+	Set<Entry<Integer, Integer>> entrys = map.entrySet();
+	for (Entry<Integer, Integer> entry : entrys) {
+		int key = entry.getKey();
+		int value = entry.getValue();
+		if(value>maxValue){
+			maxValue=value;
+			maxIndex=key;
+		}
+	}
+	return maxIndex;
+}5.9  把数组循环右移k位
+基本思想：逆置方法
+          12345678-->78123456     减几位，往前移动几位
+          0—len-1-k ---->65432178   表示右移k位后剩余的元素逆置 
+          len-k---len-1 -->65432187   表示被右移的k位元素逆置
+          0---len-1------->78123456   表示将所有元素逆置
+public static void shiftK(int[] a,int k){
+	int len = a.length;
+	k = k%len;
+	reverse(a, 0, len-1-k);
+	reverse(a,len-k,len-1);
+	reverse(a,0,len-1);
+}
+public static void reverse(int[] a,int b,int e){
+	for(;b<e;b++,e--){
+		int temp = a[b];
+		a[b] = a[e];
+		a[e]=temp;
+	}
+}5.10  递归求解数组最大元素
+基本思想：递归求解“数组第一个元素”与“与数组中其他元素组成的子数组的最大值”的最大值
+public static int maxNum(int[] a,int begin){//begin子数组的开始位置
+	int len = a.length-begin;//剩余多少元素，从0开始，则剩余len个元素
+	if(len==1)//若子数组的长度为1
+		return a[begin];
+	return Math.max(a[begin],maxNum(a, begin+1));
+}5.11  求解绝对值最小数(升序数组有0、正、负)
+基本思想：1. 如果数组第一个数>=0,a[0]为最终结果
+          2. 如果数组最后一个数<=0,a[len-1]为最终结果
+          3. 若既有正数又有负数，则通过二分查找查找分界点
+             a[mid]==0  找到
+             a[mid]<0   
+                  a[mid+1]>0 比较|a[mid]|和a[mid+1]即可
+                  a[mid+1]=0  a[mid+1]为最终结果
+                  a[mid+1]<0  右半部查找begin=mid+1
+             a[mid]>0
+                  a[mid-1]<0  比较|a[mid]|和a[mid-1]即可
+                  a[mid-1]=0  a[mid-1]为最终结果
+                  a[mid-1]>0  左半部查找end=mid-1
+public static int getAbsValue(int[] a){
+	int len = a.length;
+	int begin=0,mid=0,end=len-1,absMin=0;
+	if(a==null||len<1)
+		return Integer.MIN_VALUE;
+	//数组非负
+	if(a[0]>=0)
+		return a[0];
+	//数组非正
+	if(a[len-1]<=0)
+		return a[len-1];
+	//数组有负有正
+	while(true){//二分法查找正负分界点
+		mid = (begin+end)/2;
+		if(a[mid]==0)
+			return 0;
+		else if(a[mid]>0){
+			if(a[mid-1]==0)
+				return 0;
+			else if(a[mid-1]>0)
+				end = mid-1;
+			else
+				break; //符号相异，找到正负分界点
+		}else{
+			if(a[mid+1]==0)
+				return 0;
+			else if(a[mid+1]<0)
+				begin = mid+1;
+			else
+				break; //符号相异，找到正负分界点
+		}
+	}
+	//更具分界点,求出最小绝对值点
+	if(a[mid]>0)
+		absMin = Math.min(a[mid], Math.abs(a[mid-1]));//求的是最小值
+	else
+		absMin =  Math.min(a[mid+1], Math.abs(a[mid]));
+	return absMin;
+}5.12  求两个指定元素在数组中的最小距离(数组有重复)
+基本思想：1. 遍历到n1时，记录n1的下标，并求出与上次遍历到的n2之间的距离
+          2. 遍历到n2时，记录n2的下标，并求出与上次遍历到的n1之间的距离          
+//求数组中两个元素的最小距离
+public static int getMinDistance(int[] a,int n1,int n2){
+	int len = a.length;
+	if(a==null||len<2)
+		return Integer.MIN_VALUE;
+	int index2=-1,index1=-1,minDis=Integer.MAX_VALUE;
+	for(int i=0;i<len;i++){
+		if(a[i]==n1){
+			index1=i;//记录索引
+			if(index2>0)//最近一次遍历到的n1与n2之间的距离
+				minDis = Math.min(Math.abs(minDis), 
+                                Math.abs(index1-index2));//都加绝对值符号
+		}
+		if(a[i]==n2){
+			index2=i;//记录索引
+			if(index1>0)//最近一次遍历到的n1与n2之间的距离
+				minDis = Math.min(Math.abs(minDis), 
+                                    Math.abs(index2-index1));
+		}
+	}
+	return minDis;
+}5.13  求解三元组的距离
+基本思想：已知三个升序数组，a[l],b[m],c[n],各取一个元素使得三元组距离最小
+          1. 从三个数组中各取一个首部元素,排序后a[0]<b[0]<c[0]
+          2. 只有移动a才能使距离更小
+public static int minDistance(int[] a,int[] b,int[] c){
+	int aLen = a.length,bLen=b.length,cLen=c.length;
+	int curDist=0,min=0,minDist=Integer.MAX_VALUE;
+	int i=0,j=0,k=0;
+	while(true){
+		curDist = getMaxMin(Math.abs(a[i]-b[j]), 
+                              Math.abs(a[i]-c[k]),Math.abs(b[j]-c[k]), 1);
+		min = getMaxMin(a[i], b[j],c[k], -1);
+		if(curDist<minDist)
+			minDist=curDist;
+		if(min==a[i]){
+			if(++i>=aLen)
+				break;
+		}
+		if(min==b[j]){
+			if(++j>=bLen)
+				break;
+		}
+		if(min==c[k]){
+			if(++k>=cLen)
+				break;
+		}
+	}
+	return minDist;
+}5.14  求指定数字在数组中首次出现的位置(相邻元素相差1)
+基本思想：跳跃搜索法{3,4,5,6,5,6,7,8,9,8}
+          1. 若a[i]!=key,|a[i]-key|=offset
+          2. 若数组升序，下标i+offset即为key
+          3. 若数组非升序，key在下标i+offset之后
+public static int findFirstIndex(int[] a,int t){
+	int len = a.length;
+	for(int i=0;i<len;i+=Math.abs(t-a[i])){//不要西习惯性的i++
+		if(t==a[i])
+			return i;
+	}
+	return -1;
+}5.15  合并两个有序子段
+基本思想：交换+插入排序
+          分为两段：0=<i<=mid-1，mid<=i<=len-1
+          若第一段a[i]>a[mid] 两段进行交换
+          对第二段中a[mid]进行调整，插入排序
+public static void sortMerge(int[] a){
+	int mid = (a.length-1)/2;
+	for(int i=0;i<mid;i++){
+		if(a[i]>a[mid]){
+			int temp = a[mid];
+			a[mid] = a[i];
+			a[i] = temp;
+			findRightPlaceMid(a, mid);
+		}
+	}
+}
+//一趟冒泡排序
+public static void findRightPlaceMid(int[] a,int mid){
+	//[0-mid-1],[mid~len-1]
+	int len = a.length;
+	for(int i=mid;i<len-1;i++){
+		if(a[i]>a[i+1]){
+			int temp = a[i];
+			a[i] = a[i+1];
+			a[i+1] = temp;
+		}
+	}
+}5.16  判断一个数组中数值是否连续相邻
+示例：0可以通配成任意一个数,可出现多次
+      {8,7,5,0,6}
+基本思想：若没有0的存在，最大、最小非0值差距为len-1
+          若存在0的情况，最大、最小非0值差距为<=len-1
+          找出非0最大、最小值
+public static boolean IsConnectinuous(int[] a){
+	int len = a.length;
+	int min=a[0],max=a[0];
+	for(int i=1;i<len;i++){
+		if(a[i]!=0)
+			if(min>a[i])
+				min=a[i];
+			else if(max<a[i])
+				max=a[i];
+	}
+	if((max-min)>len-1)
+		return false;
+	else
+		return true;
+}5.17  出现一次数(找不重复的)
+5.17.1  找出数组中只出现一次的数字(其他均出现两次)
+基本思想：找出数组中只出现一次的数字
+　　　　　根据亦或特点：a^a=0
+　　　　　　　　　　　　a^0=a
+　　　　　　　　　　　　a^b>0
+public static int findOne(int[] a){
+	 int result = 0;
+	 int len = a.length;
+	 for(int i=0;i<len;i++)
+		 result^=a[i];
+	 return result;
+}5.17.2  找出数组中只出现一次的数字(其他均出现K次)
+基本思想：处理一个整数之外其他的均出现k次，找只出现一次的
+　　　　　1. 将数字的每位移入对应的int[32]中
+　　　　　2. 如果某位不能被k整除，则该数只出现一次
+public static int findOnce(int[] a,int k){
+	int len = a.length;
+	int[] bitCount = new int[32];
+	int num=0;
+	for(int i=0;i<len;i++)//遍历每个元素
+		for(int j=0;j<32;j++)//每个元素拆分32为统计，即右移
+			bitCount[j]+=((a[i]>>j)&1);//00000 00001
+	for(int i=0;i<32;i++)
+		if((bitCount[i]%k)!=0)
+			num = num+(1<<i);//将元素还原左移
+	return num;	
+}5.18  有指定范围的重复元素
+5.18.1  找到唯一重复的元素（只有一个元素重复）
+在一个长度为n的数组里,所有数字都在1到N-1的范围内,判断并求出重复数
+【求和法】
+public static int findDup(int[] a){
+	int len = a.length;
+	int sum1=0,sum2=0;
+	for(int i=0;i<len-1;i++){
+		sum1+=(i+1);
+		sum2+=a[i];
+	}
+	sum2+=a[len-1];//别忘了加
+	return sum2-sum1;
+}【异或法】设重复数为A，其余数为B
+          数组元素异或：A^A^B
+          元素范围异或：A^B
+          两者异或：A^B^( A^A^B)=A
+public static int findDup2(int[] a){
+	int len = a.length;
+	int sum1=0,sum2=0;
+	for(int i=0;i<len-1;i++){
+		sum1^=(i+1);
+		sum2^=a[i];
+	}
+	sum2^=a[len-1];
+	return sum2^sum1;
+}5.18.2  找到所有重复的元素（不止一个元素重重复）
+在一个长度为n的数组里,所有数字都在0到N-1的范围内,判断并求出重复数
+public static boolean duplicate(int numbers[],int length,int [] duplication) {
+     int k=0;
+	for(int i=0;i<length;i++){
+　　　　//通过取余,获取数字原来的数,但仅作为索引使用,并改变当前遍历点i的值
+	int index = numbers[i]%length;		 
+        if(numbers[index]>=length){//是index不是i,要判断index是否重复
+			duplication[k++]=index;
+			return true;
+		}
+		numbers[index]+=length;//加length方便,将数还原
+	}
+	return false;  
+}5.19  对两个长度相当的数组求交集
+5.19.1  二路归并法(两个数组有序情况)
+基本思想：设两个数组分别为：a1[n1],a[n2],分别以i,j遍历两个数组
+          若a[i]==a[j]    mix.add(a[i])    i++;j++
+          若a[i]<a[j]     i++;
+          若a[j]>a[i]     j++;
+public static List<Integer> interSect(int[] a1,int[] a2){
+	List<Integer> list = new ArrayList<>();
+	int i=0,j=0;
+	int len1 = a1.length,len2=a2.length;
+	while(i<len1&&j<len2){
+		if(a1[i]==a2[j]){
+			list.add(a1[i]);
+			i++;
+			j++;
+		}else if(a1[i]<a2[j]){
+			i++;
+		}else{
+			j++;
+		}	
+	}
+	return list;
+}5.19.2  顺序遍历法(只适合数组自身没有重复的情况)
+基本思想：
+	顺序遍历两个数组，将数组元素放大hash表中，同时统计元素个数，若为2则表示该元素为两个数组的交集。
+5.19.3  散列法
+基本思想：
+	遍历两个数组的任意一个数组，将遍历的数组元素存入散列表。然后，对另一个数组进行查询，若存在为交集。
+5.20  对两个长度相差悬殊的数组求交集
+基本思想：依次遍历长度最短的数组，将当前遍历元素在长数组中进行二分查找
+          1. 设置h1,h2两个指针，分别指向a和b的尾部
+          2.  a[h1]==a[h2]，list.add(a[h1])，h1--,h2--
+          3. 若a[h1]<b[]h2]，在b中二分查找a[h1]得到插入位pos，b的范围缩至[0,pos]，即h2=pos
+          4. 若a[h1]>b[]h2]，在a中二分查找b[h2]得到插入位pos，a的范围缩至[0,pos]，即h1=pos
+public static List findIntersect(int[] a,int[] b){
+	ArrayList<Integer> list = new ArrayList<Integer>();
+	int l1 = 0,h1 = a.length-1;
+	int l2 = 0,h2 = b.length-1;
+	while(h2>=0&&h1>=0){
+		if(a[h1]==b[h2]){
+			list.add(a[h1]);
+			h1--;
+			h2--;
+		}else if(a[h1]<b[h2]){
+			boolean flag = binSearch(b, l2, h2, a[h1]);
+			if(flag)
+				list.add(a[h1]);
+			h1--;
+			h2 = searchPos;
+		}else{
+			boolean flag = binSearch(a, l1, h1, b[h2]);
+			if(flag)
+				list.add(b[h2]);
+			h2--;
+			h1 = searchPos;
+		}
+	}
+	return list;
+}
+public static boolean binSearch(int[] a,int low, int high,int key){
+	while(low<=high){
+		int mid = (low+high)/2;
+		if(a[mid]==key){
+			searchPos = mid-1;
+			return true;
+		}else if(a[mid]<key){
+			low = mid+1;
+		}else{
+			high = mid-1;
+		}
+	}
+	searchPos = high+1;
+	return false;
+}5.21  排序数组去重
+基本思想：相邻比较
+public static List<Integer> sortDup(int[] a){
+	int len = a.length;
+	List<Integer> list = new ArrayList<>();
+	list.add(a[0]);
+	for(int i=1;i<len;i++){
+		if(a[i]!=a[i-1])
+			list.add(a[i]);
+	}
+	return list;
+}http://blog.sina.com.cn/s/blog_9f71682d0101ht89.html
+5.22  求排序数组最短长度
+描述：给定一个无序数组，求出需要排序的最短子数组的长度。
+	 arr={1,5,3,4,2,6,7}返回4，因为只有[5,3,4,2]需要排序。
+思想：从右向左判断不能升序，只能降序。从左向右判断不能降序，只能升序
+      往左遍历过程中，只要比出现过的Min小的都要移动排序
+      往右遍历过程中，只要比出现过的Max大的都要移动排序
+
+public static int findShortest(int[] A, int n) {
+	int len = A.length;
+	int min=A[len-1],max=A[0];
+	int noMinIndex=-1,noMaxIndex=-1;
+    for(int i=len-2;i>=0;i--)
+    	if(A[i]>min)
+    		noMinIndex=i;
+    	else
+    		min=A[i];
+    if(noMinIndex==-1)//表示全体有序
+    	return 0;
+    for(int i=1;i<len;i++)
+    	if(A[i]<max)
+    		noMaxIndex=i;
+    	else
+    		max=A[i];
+    if(noMaxIndex==-1)
+    	return 0;
+    return noMaxIndex-noMinIndex+1;//noMaxIndex-(noMinIndex-1)
+}5.23  构建乘积数组
+public int[] multiply(int[] A) {
+	int n = A.length;
+    int[] C = new int[n];
+    C[0] = 1;
+    for(int i=1;i<n;i++)
+        C[i] = C[i-1]*A[i-1];
+    int D = 1;//D[n-1]=1===>B[n-1]=C[n-1]*D[n-1]=C[n-1]*1
+    for(int i=n-2;i>=0;i--){
+        D *= A[i+1];//D[n-2]=D[n-1]*A[n-1]
+        C[i] *= D;  //C[n-2]=C[n-2]*D[n-2]
+    }
+    return C;
+}5.24  数组中只出现一次的两个数字
+public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) {
+    int result = 0,n = array.length;
+    if(n<2||array==null)
+        return;
+    for(int i=0;i<n;i++)
+        result^=array[i];
+    int bit = findBit(result);
+    for(int i=0;i<n;i++){
+        if(isBitOne(array[i],bit)==0)
+            num1[0] ^= array[i];
+        else
+            num2[0] ^= array[i];
+    }
+}
+public int findBit(int num){
+    int numBit = 0;
+    while((num&1)==0&&numBit<32){
+        num >>= 1;
+        numBit++;
+    }
+    return numBit;
+}
+public int isBitOne(int num,int bit){
+    num >>= bit;
+    return (num&1);
+}5.25  数组排成最小数
+public String PrintMinNumber(int[] numbers) {
+	ArrayList<Integer> list = new ArrayList<Integer>();
+	for(int num : numbers)
+		list.add(num);
+	Collections.sort(list, new NumComparator());
+	StringBuilder sb = new StringBuilder();
+	for (Integer i : list) 
+		sb.append(i);
+	return sb.toString();
+}
+class NumComparator implements Comparator<Integer>{
+	@Override
+	public int compare(Integer o1, Integer o2) {
+		String s1 = o1+""+o2;
+		String s2 = o2+""+o1;
+		return s1.compareTo(s2);
+	}
+}5.26 数组中出现次数超过一半的数字
+5.26.1 基于partiton函数的O(n)算法
+public int MoreThanHalfNum_Solution(int [] array) {
+    if(CheckInvalid(array))
+    	return 0;
+    int low = 0,high = array.length-1,mid = array.length/2;
+    int loc = partition(array, low, high);
+    while(loc!=mid){
+    	if(loc>mid){
+    		high = loc-1;
+    		loc = partition(array, low, high);
+    	}else{
+    		low = loc+1;
+    		loc = partition(array, low, high);
+    	}
+    }
+    int result = array[mid];
+    if(!CheckMoreThaHalf(array, result))
+    	result = 0;
+    return result;
+}
+public boolean CheckMoreThaHalf(int[] a,int result){
+	int len = a.length,times = 0;
+	for(int i=0;i<len;i++)
+		if(a[i]==result)
+			times++;
+	if(times*2<=len)
+		return false;
+	return true;
+}
+public boolean CheckInvalid(int[] a){
+	if(a==null||a.length<1)
+		return true;
+	return false;
+}
+public int partition(int[] a,int low,int high){
+	int key = a[low];
+	while(low<high){
+		while(low<high&&a[high]>key)high--;
+		a[low]= a[high];
+		while(low<high&&a[low]<=key)low++;
+		a[high] = a[low];
+	}
+	a[low]=key;
+	return low;
+}5.26.2 阵地攻守思想
+基本思想：1. 第一个数字作为第一个士兵，守阵地，count = 1； 
+		     1.1 遇到相同元素，count++; 
+			 1.2 遇到不相同元素，即为敌人，同归于尽,count--；
+          2. 当遇到count为0的情况，又以新的i值作为守阵地的士兵，继续下去。
+          3. 到最后还留在阵地上的士兵，有可能是主元素。 
+             再加一次循环，记录这个士兵的个数看是否大于数组一般即可。
+public int MoreThanHalfNum_Solution2(int [] array) {
+	if(CheckInvalid(array))
+		return 0;
+	int result = array[0],times = 1,len = array.length;
+	for(int i=1;i<len;i++){
+		if(times==0){
+			result = array[i];
+			times = 1;
+		}
+		else if(array[i]==result)
+			times++;
+		else
+			times--;
+	}
+	if(!CheckMoreThaHalf(array, result))
+		result = 0;
+	return result;
+	
+}5.27 清除行列
+基本描述：请编写一个算法，若MxN矩阵中某个元素为0，则将其所在的行与列清零。给定一个MxN的int[][]
+         矩阵mat和矩阵的阶数n，请返回完成操作后的int[][]矩阵，保证n小于等于300，矩阵中的元素
+         为int范围内。
+public int[][] clearZero(int[][] mat, int n) {
+    int rows = mat.length,cols=mat[0].length;
+    boolean[] row = new boolean[rows];
+    boolean[] col = new boolean[cols];
+    for(int i=0;i<rows;i++)
+    	for(int j=0;j<cols;j++)
+    		if(mat[i][j]==0){
+    			row[i]=true;
+    			col[j]=true;
+    		}
+    for(int i=0;i<rows;i++)
+    	for(int j=0;j<cols;j++)
+    		if(row[i]||col[j])
+    			mat[i][j]=0;
+    return mat;
+}5.28 判断丑数
+基本描述：把只包含因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为
+          它包含因子7。一个数m是另一个数n的因子，则n%m==0。根据丑数定义，若一个数能被2
+          整除，则连续除以2。若还能被3整除，则连续除以3。若还能被5整除，则连续除以5。如果
+          最后结果是1则是丑数，否则不是。
+          习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。 
+5.28.1 蛮力法
+public int GetUglyNumber_Solution(int index) {
+	int number = 0,uglyCount = 0;
+	while(uglyCount<index){
+		number++;
+		if(isUgly(number))
+			uglyCount++;
+	}
+    return number;
+}
+public boolean isUgly(int number){
+	while(number%2==0)number /= 2;
+	while(number%3==0)number /= 3;
+	while(number%5==0)number /= 5;
+	if(number==1)
+		return true;
+	else 
+		return false;
+}5.28.2 创建数组保存已经找到的丑数
+基本思想：新丑数，是前面已经生成的丑数的2倍或3倍或5倍。
+public int GetUglyNumber_Solution(int index) {
+	if(index>0){
+		int[] uglyNumbers = new int[index];
+		uglyNumbers[0]=1;
+		int nextUglyIndex =1,m2=0,m3=0,m5=0;
+		while(nextUglyIndex<index){
+			int min = min(uglyNumbers[m2]*2,uglyNumbers[m3]*3,uglyNumbers[m5]*5);
+			uglyNumbers[nextUglyIndex] = min;
+			while(uglyNumbers[m2]*2<=uglyNumbers[nextUglyIndex])m2++;
+			while(uglyNumbers[m3]*3<=uglyNumbers[nextUglyIndex])m3++;
+			while(uglyNumbers[m5]*5<=uglyNumbers[nextUglyIndex])m5++;
+			nextUglyIndex++;
+		}
+		return uglyNumbers[index-1];
+	}
+    return 0;
+}
+public int min(int num1,int num2,int num3){
+	int min = num1<num2?num1:num2;
+	min = min<num3?min:num3;
+	return min;
+}5.29 像素旋转
+public int[][] transformImage(int[][] mat, int n) {
+    for(int layer=0;layer<n/2;layer++){
+    	int first=layer,last=n-1-layer;
+    	for(int i=first;i<last;i++){
+    		int offset = i-first;
+    		int top = mat[first][i];
+    		mat[first][first] = mat[last-offset][first];
+    		mat[last-offset][i] = mat[last][last-offset];
+    		mat[last][last-offset] = mat[i][last];
+    		mat[i][last] = top;
+    	}
+    }
+    return mat;
+}
+
+5.30  顺时针打印矩阵
+输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，例如，如果输入如下矩阵： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10. 
+ArrayList<Integer> result = new ArrayList<Integer> ();
+public ArrayList<Integer> printMatrix(int [][] matrix) {
+   if(matrix.length==0||matrix[0].length==0)
+       return result;
+   int n = matrix.length,m = matrix[0].length;
+   int l = (Math.min(n,m)-1)/2+1;//这个是层数
+   for(int i=0;i<l;i++){
+       for(int k=i;k<m-i;k++)result.add(matrix[i][k]);//左至右
+       for(int j=i+1;j<n-i;j++)result.add(matrix[j][m-i-1]);//右上至右下
+       for(int k=m-i-2;(k>=i)&&(n-i-1!=i);k--)result.add(matrix[n-i-1][k]);//右至左
+       for(int j=n-i-2;(j>i)&&(m-i-1!=i);j--) result.add(matrix[j][i]);//左下至左上
+   } 
+   return result; 
+}5.31 滑动窗口的最大值
+给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组{2,3,4,2,6,2,5,1}及滑动窗口的大小3，那么一共存在6个滑动窗口，他们的最大值分别为{4,4,6,6,6,5}； 针对数组{2,3,4,2,6,2,5,1}的滑动窗口有以下6个： {[2,3,4],2,6,2,5,1}， {2,[3,4,2],6,2,5,1}， {2,3,[4,2,6],2,5,1}， {2,3,4,[2,6,2],5,1}， {2,3,4,2,[6,2,5],1}， {2,3,4,2,6,[2,5,1]}。
+public ArrayList<Integer> maxInWindows(int [] num, int size){
+    ArrayList<Integer> list  = new ArrayList<Integer> ();
+    if(size==0)
+        return list;
+    for(int i=0;i<=num.length-size;i++){
+        int max=num[i];
+        for(int j=i+1;j<i+size;j++){
+            if(num[j]>max)
+                max=num[j];
+        }
+        list.add(max);
+    }
+    return list;
+}
+
+6 字符串
+6.1 字符串反转
+6.1.1  语句中包含单词
+基本思想：How are you--->you are How
+          因为字符串中有空格所以要考虑到单词的问题
+          1. 整体反转 uoy era woH
+          2. 对单词反转 you are How
+public static String swapWords(String s){
+	char[] c = s.toCharArray();
+	int len = c.length;
+	swap(c,0,len-1);
+	int begin = 0;
+	for(int i=0;i<len;i++)
+		if(c[i]==' '){
+			swap(c, begin, i-1);
+			begin = i+1;//
+		}
+	swap(c, begin, len-1);
+	return new String(c);
+}
+public static void swap(char[] c,int low,int high){
+	while(low<high){
+		char temp = c[low];
+		c[low] = c[high];
+		c[high] = temp;
+		low++;high--;
+	}
+}6.1.2  将字符串左右移动
+基本思想："ABCDEFGH",8,4 --->0-4移到右边，5-7移到左边—> "FGHABCDE" 
+public String rotateString(String A, int n, int p) {
+    char[] c = A.toCharArray();
+    int len = A.length();
+    reverse(c,0,p);
+    reverse(c,p+1,len-1);
+    reverse(c,0,len-1);
+    return new String(c);
+}
+public void reverse(char[] a,int low,int high){
+    while(low<high){
+        char temp = a[low];
+        a[low] = a[high];
+        a[high] = temp;
+        low++;high--;
+    }
+}6.2  判断字符串是否由相同的字符组成
+基本思想：“aabbcc”和”ccbaba”的字符顺序不同但是内容相同
+6.2.1 排序法
+	1. 将字符串转换为两个ASCII数组getBytes-->a,b
+	2. 对a,b进行排序
+    3. 从首部逐个比较
+//判断字符串是否相等
+public static boolean compare2(String s1,String s2){
+	int len = s1.length();
+	byte[] a = s1.getBytes();
+	byte[] b = s2.getBytes();
+	Arrays.sort(a);
+	Arrays.sort(b);
+	for(int i=0;i<len;i++)
+		if(a[i]!=b[i])
+			return false;
+	return true;
+}6.2.2  空间换时间
+	1. 新建一个辅助数组count[256],用于统计字符个数
+　　2. 对第一个字符数组，进行字符统计count[c[i]]++
+　　3. 对第二个字符数组，进行字符抵消count[c[i]]--
+public static boolean compare(String s1,String s2){
+	int[] bitCount = new int[256];
+	byte[] a = s1.getBytes();   byte[] b = s2.getBytes();
+	int l1= a.length,   l2=b.length;
+	for(int i=0;i<l1;i++)
+		bitCount[a[i]]++;
+	for(int i=0;i<l2;i++)
+		bitCount[b[i]]--;//--不是++
+	for(int i=0;i<256;i++)
+		if(bitCount[i]!=0)
+			return false;
+	return true;		
+}6.3  删除字符串中重复字符
+6.3.1   蛮力法    
+示例：“google”---->”go\0\0le”--->gole  O(n*n)
+public static String delDup(String s){
+	char[] c = s.toCharArray();
+	int len = c.length;
+	for(int i=0;i<len;i++){
+		if(c[i]=='\0')
+			continue;
+		for(int j=i+1;j<len;j++){
+			if(c[j]=='\0')
+				continue;
+			if(c[i]==c[j])
+				c[j]='\0';
+		}
+	}
+	String str = "";
+	for(int i=0;i<len;i++)
+		if(c[i]!='\0')
+			str+=c[i];
+	return str;
+}6.3.2  空间换时间位图法
+基本思想: 1. 常见字符一共256个，可申请长度为256的int数组来记录每个字符出现次数
+         2. 由于该题只是判断字符是否出现只有0,1两种结果，所以可用8个int表示
+         3. 当某个字符已经出现过相应位为1，对应字符置‘\0’
+         4. 选出不为’\0’的字符
+注意：对字符ASCII为23的字符将被存储到：23/32==0，23%32=23，第0个int值的23上。
+public static String delDup1(String s){
+	int[] bitMap = new int[8];//8x32=256位,分四组表示
+	char[] c = s.toCharArray();   int len = c.length;
+	for(int i=0;i<len;i++){//按位图去除重复字符
+		int index = (int)c[i]/32;
+		int shift = (int)c[i]%32;
+		if((bitMap[index]&(1<<shift))!=0)
+			c[i]='\0';
+		bitMap[index]|=(1<<shift);
+	}
+	int k=0; //去出字符串中的'\0'
+	for(int i=0;i<len;i++)
+		if(c[i]!='\0')
+			c[k++]=c[i];
+	return new String(c,0,k);
+}6.4  字符串计数
+基本思想；单词数目由空格数来决定，多个空格视为一个，开头空格不统计在内
+		1. 若当前字符非空格，而前面字符为空格，表示新单词开始，count++
+        2. 若当前字符非空格前面字符也是非空格，则为一个单词的继续count不加
+        3. 由word代表前面是否为空格，word=0代表为空格，word=1代表非空格
+public static int wordCount(String s){
+	int count = 0,word = 0, len = c.length;//前面字符是否为空格
+	char[] c = s.toCharArray();
+	for(int i=0;i<len;i++){
+		if(c[i]==' ')//当字符为空格时将word标识值0
+			word=0;
+		else if(word==0){//若飞空格，若上面的逻辑执行，下面的将不再执行
+			word=1;
+			count++;
+		}
+	}
+	return count;
+}6.5  按要求打印数组排列情况（图的应用）
+描述：针对1、2、2、3、4、5这6个数，打印所有全排列，要求4不能出现在第3位，3与5不能相连
+	1. 以1、2、2、3、4、5为节点构造一个无相连通图，其中3，5不连通
+　　2. 分别从这6个点进行深度优先遍历
+　　   2.1 把每次遍历的路径记录下来，若第三位不是4则加入set
+　　3. 遍历set集合打印路径
+　　分别从不同的节点出发进行，深度优先遍历
+　　[0][0]  [0][1]  [0][2]  [0][3]  [0][4]  [0][5]
+　　[1][0]  [1][1]  [1][2]  [1][3]  [1][4]  [1][5]
+　　[2][0]  [2][1]  [2][2]  [2][3]  [2][4]  [2][5]
+　　[3][0]  [3][1]  [3][2]  [3][3]  [3][4]  [3][5]
+　　[4][0]  [4][1]  [4][2]  [4][3]  [4][4]  [4][5]
+　　[5][0]  [5][1]  [5][2]  [5][3]  [5][4]  [5][5]
+　　graph无向连通图矩阵仅仅表示了两点是否可达
+　　visited表示一个点是否已经被访问
+public static Set getAllCombines(){
+	buildGraph();//构造图
+	HashSet<String> set = new HashSet<String>();
+	for(int i=0;i<n;i++)//从不同节点遍历
+		depthFirstSearch(i, set);
+	return set;
+}
+public static void depthFirstSearch(int start,Set<String> set){
+	visited[start]=true;
+	combines += numbers[start];
+	if(combines.length()==n){
+		if(combines.indexOf('4')!=2)
+			set.add(combines);
+	}
+	for(int j=0;j<n;j++){
+		if(graph[start][j]==1&&visited[j]==false){//可达并且没有被访问
+			depthFirstSearch(j, set);
+		}
+	}
+	/**
+	 * 后面两步为，在递归最深层次后，开始往回退，把路径和访问表示还原，
+	 * 进行下一轮点的遍历也就是getAllCombines中，i+1的情况
+	 * 1. 只有递归到最深层次最后两句代码才会执行,
+          遍历到4时前面所有点都已被访问，不再递归开始回退
+	 * 2. 5->1->2->2->3->4  visit[5]=false;
+	 * 3. 5->1->2->2->3     visit[4]=false;
+	 * 4. 5->1->2->2        visit[3]=false;
+	 * 5. 5->1->2           visit[2]=false;
+	 * 6. 5->1              visit[1]=false;
+	 * 7. 5                 visit[0]=false;
+	 */
+	combines=combines.substring(0,combines.length()-1);
+	visited[start]=false;
+}
+public static void buildGraph() {
+	for(int i=0;i<n;i++)
+		for(int j=0;j<n;j++){
+			if(i==j)
+				graph[i][j]=0;
+			else
+				graph[i][j]=1;
+		}
+		graph[3][5]=0;
+		graph[5][3]=0;
+}6.6 字符串排列
+基本思想：1. 把整个字符串分为两个部分：第一个字符，第一个字符后面部分
+		  2. 求解所有可能出现在第一个位置字符
+             2.1 拿第一个字符和第二部分字符进行交换
+             2.2 递归求解第二部分排列情况
+基本描述：acb--->全排列：acb、abc、bca、cab、cba
+public ArrayList<String> Permutation(String str) {
+    ArrayList<String> list = new ArrayList<String>();
+    int len = str.length();
+    if(str==null||len<1) 
+    	return list;
+    Permutation(str.toCharArray(),0,list);
+    Collections.sort(list);
+    return list;
+ }
+public void Permutation(char[] c, int begin, ArrayList<String> list) {
+	int len = c.length;
+	if(begin==len-1){
+		String str = new String(c);
+		if(!list.contains(str))
+			list.add(str);
+		return ;//某一次的递归结束
+	}
+	for(int i=begin;i<len;i++){
+		char temp = c[begin];
+		c[begin] = c[i];
+		c[i] = temp;
+		Permutation(c,begin+1,list);
+		temp = c[begin];
+		c[begin] = c[i];
+		c[i] = temp;
+	}
+}6.7  输出字符串的所有组合
+6.7.1  递归实现
+基本思想：在长度为n的字符串中，选取长度为m的字串，m<=n
+          combineRecursive(char[] c,int begin,int len,StringBuffer sb)
+          c为要源字符数组，begin表示要选取开始位置，len选取的长度
+          sb表示已经选取的字符
+基本描述：abc->a,b,c,ac,ab,bc,abc
+public static void combines2(String str){
+	StringBuffer sb = new StringBuffer("");
+	int len = str.length();
+	for(int i=1;i<=len;i++)
+        // 从0开始，截取长度为i的字符串
+		combineRecursive(str.toCharArray(), 0, i, sb);
+}
+public static void combineRecursive(char[] c,int begin,int len,StringBuffer sb){
+	if(len==0){//len为0时表示字符截取完毕，没有还需截取的剩余字符
+		System.out.println(sb+" ");
+		return ;
+	}
+	if(begin==c.length)
+		return;
+	/**
+	 * 考虑是否选取源字符数组的第一个字符
+	 * 1. 选取首字符，则还需选取m-1个字符
+	 * 2. 不选取首字符，则还需选取m个字符
+	 */
+	sb.append(c[begin]);//选取首字符
+	combineRecursive(c, begin+1, len-1, sb);//选取首字符，再选len-1个即可
+	sb.deleteCharAt(sb.length()-1);//考虑第二种情况，不要首字符的情况	combineRecursive(c, begin+1, len, sb); //所以删除上次加入字符
+}6.7.2   二进制法
+基本思想：用一个长度为n的01字符来表表示,对应位上的字符是否出现
+          001—>c  111--->abc ===>001---111对应的字符
+//输出字符串的所有组合
+public static void comBine(char[] c){
+	if(c==null)
+		return;
+	int len = c.length;
+    int result = len;
+	boolean[] used = new boolean[len];
+	char[] cache = new char[len];
+	
+	while(true){
+		int index = 0;//每次从最低位开始添加，相当于每次从低位上加1
+		while(used[index]){//当低位为true表示，表示已经包括
+			used[index]=false;//将访问低位标识置false
+			++result;
+            ++index;          //将相应位上的元素移除
+			if(index==len)   //由于地位上的元素已经访问，所以要进位
+				return;       //当所进的位数超过数组长度时退出
+		}
+		used[index]=true;//每次先把最高位输出，然后再次基础上加1
+		cache[--result]=c[index];
+		System.out.println(new String(cache).substring(result)+" ");
+        //substring(index)--->index<=i<=len-1
+	}
+}【比较简单的比较方式】
+public static void subSet(String s){
+	//左移0位可表示1个长度字符，左移n-1位可表示n个长度字符
+	//0000 0001       a
+	//0010 0000   edcba
+	for(int i=1;i<(1<<s.length());i++)//00001~11111
+		sub(s,i);
+}
+public static void sub(String s, int num) {
+	String subStr = "";
+	for(int i=0;i<s.length();i++)
+		if((num&(1<<i))!=0)
+			subStr+=s.charAt(i);
+	System.out.print(subStr+" ");
+		
+}6.8  截取字符串，不能包含半个汉字
+public static String truncateStr(String s,int len){
+	if(s==null||s.equals("")||len==0)
+		return "";
+	int count = 0;
+	char[] charArr = s.toCharArray();
+	StringBuffer sb = new StringBuffer("");
+	for (char c : charArr) {
+		if(count<len){
+			if(isChinese(c)){
+				if(count+1==len)
+					return sb.toString();
+				count+=2;
+				sb.append(c);
+			}else{
+				count++;
+				sb.append(c);
+			}
+		}
+	}
+	return sb.toString();
+}6.9  判断字符串是否为整数
+public boolean isNumeric(char[] str) {
+    int len = str.length;
+    int i=0,numDot=0,numE=0;
+    //边界判断
+    if(len==0||str==null)
+    	return false;
+    //符号判断
+    if(str[0]=='+'||str[0]=='-')
+    	i++;
+    //判断数字格式
+    while(i<len){
+    	if(str[i]>='0'&&str[i]<='9')//判断是否是数字
+    		i++;
+    	else if(str[i]=='.'){
+    		if(numE>0)
+    			return false;
+    		i++;
+    		numDot++;
+    	}else if(str[i]=='e'||str[i]=='E'){
+    		i++;
+    		numE++;
+    		if(i==len)
+    			return false;
+    		if(str[i]=='+'||str[i]=='-')
+    			i++;
+    	}else{//N,+,.,-,E,e都不匹配
+    		return false;
+    	}
+    }
+    if(numDot>1||numE>1)
+    	return false;
+    return true;
+}6.10  将字符串转换为数字
+enum Status{ VALID,INVALID;/*枚举实例*/}
+public int StrToInt2(String str) {
+	Status status = Status.INVALID;
+	long num = 0L;//L与l没区别，只不过l更像1
+	if(str!=null&&str.length()>0){
+		 char[] c = str.toCharArray();
+		 int len = c.length,i=0,sign=0;
+		 sign = c[0]=='-'?-1:1;
+		 
+		 if(c[0]=='-'||c[0]=='+')
+	        	i++;
+		 if(c.length>i){
+			 while(i<len){
+				if(c[i]>='0'&&c[i]<='9'){
+		        	num = num*10+c[i]-'0';
+		        	if((sign>0&&num>0x7fffffff)||(sign<0&&num*sign<0x80000000)){
+		        		num=0;
+		        		break;
+		        	}
+		        	i++;
+		     	}else{
+		     		num=0;
+		     		break;
+		     	}
+			 }
+			 if(i==len){
+                 status = Status.VALID;
+                 num = num*sign;
+             }	 
+		 }
+	}
+	return (int)num;
+}6.11 字符串压缩
+基本描述："aabcccccaaa"===> "a2b1c5a3",长度缩小则返回新串，否则返回原串
+基本思想：找相邻元素不同的==> aabcccccaaa
+          当相邻元素不一样时，开始记录
+6.11.1 使用StringBuffer
+public String zipString(String iniString) {
+    int count = 1,len = iniString.length();
+    int size = countCompression(iniString);
+    if(size >= len)
+    	return iniString;
+    char[] c = iniString.toCharArray();
+    StringBuilder sb = new StringBuilder();
+    for(int i=0;i<len-1;i++){
+    	if(c[i]==c[i+1])
+    		count++;
+    	else{
+    		sb.append(c[i]+""+count);
+    		count = 1;
+    	}
+    }
+　　sb.append(c[len-1]+""+count);
+　　return sb.toString();
+}
+public int countCompression(String str){
+	if(str==null||str.isEmpty())
+		return 0;
+	int size = 0,count = 0,len = str.length();
+	char[] c = str.toCharArray();
+	for(int i=0;i<len-1;i++){
+		if(c[i]==c[i+1]){
+			count++;
+		}else{
+			size += 1+String.valueOf(count).length();
+			count+=1;
+		}
+	}
+	size+=1+String.valueOf(count).length();
+	return size;
+}6.11.2 不使用StringBuffer
+public String zipString2(String s) {
+	int count = 1,len = s.length();
+	int size = countCompression(s);
+	if(size >= len)
+		return s;
+	char[] c = new char[size];
+	int index = 0;
+	for(int i=0;i<len-1;i++){
+		if(s.charAt(i)==s.charAt(i+1))
+			count++;
+		else{
+			index = setChar(c, s.charAt(i), index, count);
+			count = 1;
+		}
+	}
+	index = setChar(c, s.charAt(len-1), index, count);
+	return new String(c,0,size);
+}
+public int setChar(char[] cs,char c,int index,int count){
+	cs[index]=c;
+	index++;
+	char[] countChar = String.valueOf(count).toCharArray();
+	for(char e:countChar){
+		cs[index]=e;
+		index++;
+	}
+	return index;
+}6.12  替换空格
+public String replaceSpace(StringBuffer str) {
+	if(str==null||str.length()<1)
+		return str.toString();
+	int spaceCount = 0,len = str.length(),newLen = 0;
+	for(int i=0;i<str.length();i++)
+		if(str.charAt(i)==' ')
+			spaceCount++;
+	newLen = len+spaceCount*2;
+	char[] c = new char[newLen];
+	for(int i=0;i<len;i++)
+		c[i]=str.charAt(i);
+	int j = newLen-1;
+	for(int i=len-1;i>=0;i--){
+		if(c[i]==' '){
+			c[j--] =  '0';
+			c[j--] = '2';
+			c[j--] = '%';
+		}else{
+			c[j--]=c[i];
+		}
+	}
+	return new String(c);
+}6.13  反转子串
+基本描述：假定我们都知道非常高效的算法来检查一个单词是否为其他字符串的子串。请将这个算法编写 
+          成一个函数，给定两个字符串s1和s2，请编写代码检查s2是否为s1旋转而成，要求只能调用
+          一次检查子串的函数。
+public boolean checkReverseEqual(String s1, String s2) {
+    if(s1.length()>0&&s1.length()==s2.length()){
+    	String s1s1 = s1+s1;
+    	if(s1s1.contains(s2))
+    		return true;
+    	else
+    		return false;
+    }
+    return false;
+ }6.14  第一个只出现一次的字符位置
+基本描述：在一个字符串(1<=字符串长度<=10000，全部由字母组成)中找到第一个只出现一次的字符的位置。
+         若为空串，返回-1。位置索引从0开始。“abaccdeff”==>b
+public int FirstNotRepeatingChar(String str) {
+	HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+	for(int i=0;i<str.length();i++)
+		if(map.containsKey(str.charAt(i))){
+			Integer count = map.get(str.charAt(i));
+			count += 1;
+			map.put(str.charAt(i), count);
+		}else{
+			map.put(str.charAt(i), 1);
+		}
+	for(int i=0;i<str.length();i++)
+		if(map.get(str.charAt(i))==1)
+			return i;
+    return -1;
+}6.15  最长合成字符串
+基本描述：有一组单词，请编写一个程序，在数组中找出由数组中字符串组成的最长的串A，即A是由其它
+          单词组成的(可重复)最长的单词。
+          ["a","b","c","ab","bc","abc"],6--->3
+public int getLongest(String[] str, int n) {
+    HashMap<String, Boolean> map = new HashMap<String,Boolean>();//保存原串的匹配标识
+    for(String s:str){
+    	map.put(s, true);
+    }
+    Arrays.sort(str, new LengthComparator());
+    for(String s:str){
+    	if(canBuildWord(s, true, map))//初始isOriginal为true，是为了排除对原串处理
+    		return s.length();
+    }
+    return 0;
+}
+public boolean canBuildWord(String w,boolean isOriginal,HashMap<String,Boolean> map){
+	if(map.containsKey(w)&&!isOriginal)//若要当前单词已经处理过了，并且该单词不是原串
+		return map.get(w);//而是其中的一个子串，则直接返回，上步处理的结果即可
+	for(int i=1;i<w.length();i++){
+		String left = w.substring(0,i);
+		String right = w.substring(i);
+        //将w划分为种前缀，前缀长度为1-len-2,然后递归判断后缀
+		if(map.containsKey(left)&&map.get(left) &&canBuildWord(right, false, map))
+			return true;
+	}
+	map.put(w, false);//若该单词，不能满足要求，拆分为满足条件的左右子串
+	return false;
+}
+class LengthComparator implements Comparator<String>{
+	@Override
+	public int compare(String o1, String o2) {//小的放前面
+		return o2.length()-o1.length();
+	}
+}6.16 字符流中第一个不重复的字符
+请实现一个函数用来找出字符流中第一个只出现一次的字符。例如，当从字符流中只读出前两个字符"go"时，第一个只出现一次的字符是"g"。当从该字符流中读出前六个字符“google"时，第一个只出现一次的字符是"l"。
+import java.util.*;
+public class Solution {
+    Map<Character, Integer> map=new LinkedHashMap();
+    //Insert one char from stringstream
+    public void Insert(char ch){
+    	if(map.containsKey(ch))
+            map.put(ch,map.get(ch)+1);
+        else
+            map.put(ch,1);     
+    }
+   //return the first appearence once char in current stringstream
+    public char FirstAppearingOnce(){
+        char c='#';
+      	for(Map.Entry<Character, Integer> entry : map.entrySet()){
+            if(entry.getValue()==1){
+                c=entry.getKey();
+                break;
+            }    
+        }
+        return c;
+    }
+}注意：为了保证遍历的有序性必须使用LinkedHashMap，否则使用list+hashmap 
+
+
+
+7 排序算法
+7.1  冒泡排序
+7.1.1  上冒：最大值移到最右
+private static void bubbleSortRight(int[] a) {
+	int len=a.length,flag=0;
+	for(int i=0;i<len-1;i++){//没有等号,n-1躺或将最小移到i
+		flag = 0;
+		for(int j=0;j<len-1-i;j++){//没有等号，每趟少一个，比到j+1即可
+			if(a[j]>a[j+1]){
+				int temp = a[j];
+				a[j]=a[j+1];
+				a[j+1]=temp;
+				flag = 1;
+			}
+		}
+		if(flag==0)
+			break;
+	}	
+}7.1.2  下冒：最小值移到最左
+private static void bubbleSortLeft(int[] a) {
+	int len=a.length,flag=0;
+	for(int i=0;i<len-1;i++){//没有等号,n-1躺或将最小移到i
+		flag = 0;
+		for(int j=len-1;j>i;j--){//没有等号，每趟少一个，比到j+1即可
+			if(a[j-1]>a[j]){
+				int temp = a[j];
+				a[j]=a[j-1];
+				a[j-1]=temp;
+				flag = 1;
+			}
+		}
+		if(flag==0)
+			break;
+	}	
+}7.1.3  双冒：最大值移到最右，从右边将最小移到左
+public static void bubbleSort(int[] a) {
+	int len=a.length,left=0,right=len-1,shift = 0;
+	while(left<right){//没有等号
+		for(int i=left;i<right;i++)
+			if(a[i]>a[i+1]){
+				int temp = a[i];
+				a[i] = a[i+1];
+				a[i+1] = temp;
+				shift = i;
+			}
+		right = shift;
+		for(int i=right;i>left;i-- )
+			if(a[i]<a[i-1]){
+				int temp = a[i];
+				a[i] = a[i-1];
+				a[i-1] = temp;
+				shift = i;
+			}
+		left = shift;
+	}	
+}7.2  简单选择排序
+public static void selectSort(int[] a){
+	int len=a.length, min=0,minPos=0;
+	for(int i=0;i<len-1;i++){
+		min = a[i];//记录要选选择数
+		minPos = i;//记录初始位置
+		for(int j=i+1;j<len;j++)
+			if(a[j]<min){
+				min=a[j];
+				minPos=j;//更新位置
+			}
+		if(minPos!=i){
+			a[minPos]=a[i];
+			a[i]=min;
+		}
+	}
+}7.3  直接插入排序
+7.3.1  直插排序
+private static void insertSort(int[] a) {
+	int len = a.length;
+	for(int i=1;i<len;i++){//遍历插入位置1-len-1
+		int key=a[i],j=i;//初始插入位置、插入点
+		if(a[j-1]>key){//判断查找插入位置
+			while(j>=1&&a[j-1]>key){//查找并移动元素
+				a[j]=a[j-1];//插入位右移
+				j--;
+			}
+            a[j]=key;
+		}
+	}
+}7.3.2  折半插入排序
+private static void binInsertSort(int[] a) {
+	int len = a.length;
+	for(int i=1;i<len;i++){//遍历插入位置1-len-1
+		int key=a[i];//要插入的点
+		int pos = binSearchPos(a, 0, i-1, key); //二分查找插入位
+		for(int j=i;j>pos;j--)//移动元素
+			a[j] = a[j-1];
+		a[pos]=key;
+	}
+}
+public static int binSearchPos(int[] a,int low,int high,int key){
+	while(low<=high){
+		int mid = (low+high)/2;
+		if(a[mid]>key)
+			high = mid-1;
+		else
+			low = mid+1;
+	}
+	return high+1;
+}7.4  希尔插入排序
+private static void shellSort(int[] a) {
+	int len = a.length;
+	for(int h=len/2;h>0;h=h/2){
+		for(int i=h;i<len;i++){//遍历插入位置1-len-1
+			int key=a[i],j=i;//初始插入位置、插入点
+			if(a[j-h]>key){//判断查找插入位置
+				while(j>=h&&a[j-h]>key){//查找并移动元素,找到第二个点即可
+					a[j]=a[j-h];//插入位右移
+					j-=h;
+				}
+			}
+			a[j]=temp;
+		}
+	}
+}7.5  快速排序
+7.5.1  分割算法（首尾指针法）
+基本思想：low = 0,high = len-1  两个指针往中间移动
+
+public int partition(int[] a, int low, int high) {
+	int key=a[low];
+	while(low<high){
+		while(low<high&&a[high]>key)high--;
+		a[low]=a[high];
+		while(low<high&&a[low]<=key)low++;//关键字的上限或下限必须有一个
+		a[high]=a[low]; //为等号，否则在a[low]=a[high]=key时出现死循环
+	}
+	a[low]=key;
+	return low;
+}7.5.2  分割算法（前后指针法）
+基本思想：设置前后指针，before进行遍历，last只记录<key的数
+
+private static int partition(int[] a, int low, int high) {
+	int key=a[high];
+	int i = low-1;
+	for(int j=low;j<high;j++){
+		if(a[j]<key){
+			i++;
+			int temp = a[i];
+			a[i] = a[j];
+			a[j]=temp;
+		}
+	}
+	a[high] = a[i+1];
+	a[i+1] = key;
+	return i+1;
+}7.5.3  递归方式
+private static void quickSort(int[] a,int low,int high) {
+	if(low<high){
+		int loc = partition(a, low, high);
+		quickSort(a, low, loc-1);
+		quickSort(a, loc+1, high);
+	}
+}7.5.4  非递归方式
+private static void quickSort(int[] a,int low,int high) {
+	if(low<high){
+		Stack<Integer> s = new Stack<Integer>();
+		s.push(low);   s.push(high);
+		while(!s.isEmpty()){
+			int h = s.pop(),l=s.pop();
+			int loc = partition(a, l, h);
+			if(loc-1>l){
+				s.push(l);     s.push(loc-1);
+			}else if(loc+1<h){
+				s.push(loc+1); s.push(h);
+			} 
+        } 
+    } 
+}7.6  归并排序
+7.6.1  两个有序段合并
+基本思想：设置两个低位指针l1,l2，分别遍历两个有序段，将小元素存入新空间
+	      第一段：0<=i<=mid   第二段：mid+1<=j<=high
+【占用额外空间】
+public static void merge(int[] a,int low,int mid,int high) {
+	int h1=mid,l1=low;//high1不是简简单单的/2,考虑问题要全面
+	int h2=high,l2=mid+1,k=0;
+	int[] temp = new int[high-low+1];
+	while(l1<=h1&&l2<=h2){
+		if(a[l1]<=a[l2])
+			temp[k++]=a[l1++];
+		else
+			temp[k++]=a[l2++];
+	}
+	while(l1<=h1)
+		temp[k++]=a[l1++];
+	while(l2<=h2)
+		temp[k++]=a[l2++];
+	System.arraycopy(temp, 0, a, low, (high-low)+1);//复制个数注意好
+}【不占用额外空间】
+基本思想：交换+插入排序
+          分为两段：0=<i<=mid-1，mid<=i<=len-1
+          若第一段a[i]>a[mid] 两段进行交换
+          对第二段中a[mid]进行调整，插入排序
+public static void sortMerge(int[] a){
+	int mid = (a.length-1)/2;
+	for(int i=0;i<mid;i++){
+		if(a[i]>a[mid]){
+			int temp = a[mid];
+			a[mid] = a[i];
+			a[i] = temp;
+			findRightPlaceMid(a, mid);
+		}
+	}
+}
+//一趟冒泡排序
+public static void findRightPlaceMid(int[] a,int mid){
+	//[0-mid-1],[mid~len-1]
+	int len = a.length;
+	for(int i=mid;i<len-1;i++){
+		if(a[i]>a[i+1]){
+			int temp = a[i];
+			a[i] = a[i+1];
+			a[i+1] = temp;
+		}
+	}
+}7.6.2  递归方式
+private static void MergeSort(int[] a,int low,int high){
+	if(low<high){
+		int mid = (low+high)/2;
+		MergeSort(a,low,mid);
+		MergeSort(a,mid+1,high);
+		merge(a, low,mid,high);
+	}
+}7.6.3  非递归方式
+public static void mergeSort(int[] a){
+	int len = a.length;
+	int steps = (int) (Math.log(len)/Math.log(2))+1;
+	for(int i=1;i<=steps;i++){//归并趟数
+		int h = (int) Math.pow(2, i); //归并步长
+		for(int low=0;low<len-1;low=low+h){ //合并子段
+			int mid = (low+h/2)-1;//前半段的结尾h/2
+			if(mid<len-1){ //前半段大于总长才合并
+				int high = low+h-1;//当后半段结尾大于总长时，要调整
+				if(high>len-1)
+					high=len-1;
+				merge(a,low,mid,high);
+			}
+		}
+	}
+}7.7 基数排序
+7.7.1 排序原理
+	基数排序已经不再是一种常规的排序方式，它更多地像一种排序方法的应用。基数排序必须依赖于另外的排序方法，而且这种排序方法必须是稳定的。基数排序的总体思路就是将待排序数据拆分成多个关键字进行排序。也就是说，基数排序的实质是多关键字排序。基数排序是通过“分配”和“收集”过程来实现排序。数组中数据的范围固定
+	多关键字排序的思路是将待排数据里的排序关键字拆分成多个排序关键字；第1个排序关键字，第2个排序关键字，第3个排序关键。然后，根据子关键字对待排序数据进行排序。
+	多关键字排序时有两种解决方案：
+	1. 最高位优先法（MSD）(Most Significant Digit first)
+	2. 最低位优先法（LSD）(Least Significant Digit first)
+	例如，对如下数据序列进行排序。
+　　192,221,12,23
+　　可以观察到它的每个数据至多只有3位，因此可以将每个数据拆分成3个关键字：百位（高位）、十位、个位（低位）。如果按照习惯思维，会先比较百位，百位大的数据大，百位相同的再比较十位，十位大的数据大；最后再比较个位。
+　　人得习惯思维是最高位优先方式，如果按照计算机实现起来有一定的困难。当开始比较十位时，程序还需要判断它们的百位是否相同。这就人为地增加了难度，计算机通常会选择最低位优先法。
+　　注意一点：LSD的基数排序适用于位数少的数列，如果位数多的话，使用MSD的效率会比较好。
+　　http://www.cnblogs.com/oumyye/p/4522467.html
+　　http://blog.csdn.net/tangbo713/article/details/41204313
+　　http://blog.csdn.net/yutianzuijin/article/details/22876017
+7.7.2 排序实现
+public static void radixSort(int[] data, int radix, int d) {  
+    int[] tmp = new int[data.length]; // 缓存数组
+    // buckets用于记录待排序元素的信息，每个桶中元素个数 ===>该桶中元素排序后最大位置
+    int[] buckets = new int[radix];  
+
+    for (int i = 0, rate = 1; i < d; i++) {  
+        Arrays.fill(buckets, 0); // 重置count数组，开始统计下一个关键字   
+        System.arraycopy(data, 0, tmp, 0, data.length);// 将data元素完全复制到tmp中    
+        for (int j = 0; j < data.length; j++) {//计算每个待排序数据的子关键字个数    
+            int subKey = (tmp[j] / rate) % radix;  
+            buckets[subKey]++;  
+        }  
+        for (int j = 1; j < radix; j++)//每个关键字排序后的最大位置+1 
+            buckets[j] = buckets[j] + buckets[j - 1];  
+        for (int m = data.length - 1; m >= 0; m--) { // 按子关键字对指定的数据进行排序   
+            int subKey = (tmp[m] / rate) % radix;  
+            data[--buckets[subKey]] = tmp[m];  
+        }  
+        rate *= radix;  
+    }  
+}7.8 堆排序
+7.8.1  调整顶堆（小顶堆）
+private static void adjustMinHeapDown(int[] a, int begin, int end) {
+	int key = a[begin], pos = begin;//pos表示调整后key插入位置 
+	int child=0;//指向节点孩子
+    //根据孩子调整根节点,调整点是不变的，位置pos在改变
+	for(;2*pos+1<=end;pos=child){
+		child = 2*pos+1;//查找孩子节点
+		if(child<end&&a[child]>a[child+1])
+			child++;
+		if(a[child]<key)//只有当孩子节点比key小时才调整
+			a[pos]=a[child]; //将child调整到pos
+		else
+			break;
+	}
+	a[pos]=key;
+}7.8.2  堆排序
+public static void heapSort(int[] a){
+	int len = a.length;
+	for(int i=(len-1)/2;i>=0;i--){//建立顶堆，从最后一个根节点网上建立
+		adjustMinHeapDown (a,i,len-1);
+	}
+	for(int i=len-1;i>=0;i--){//调整顶堆
+		int temp = a[i];
+		a[i]=a[0];
+		a[0]=temp;
+		adjustMinHeapDown(a, 0, i-1);
+	}
+}7.8.3  堆插入
+基本思想：直接将插入元素放入堆序列的尾部，然后向上调整: 当根节点大于key时调整
+public static void adjustHeapUp(int[] a,int k){//大顶堆
+	//key：要被调整的关键字，pos：key的插入位置，parent：key的父节点
+	int key = a[k],pos = k,parent = (pos-1)/2;
+	while(pos!=0&&parent>=0){
+		if(a[parent]>key)
+			break;
+		a[pos] = a[parent];
+		pos = parent;
+		parent = (pos-1)/2;
+	}
+	a[pos] = key;
+}7.8.4  堆删除
+基本思想：直接将最后节点替换首节点，然后向下调整
+public static void deleteHeap(int[] a){//大顶堆
+	int len = a.length;
+	a[0]=a[len-1];
+	adjustHeap(a,0,len-2);
+}7.9  排序应用
+7.9.1  快速排序求TopN(不改变原来顺序)
+public static int[] TopK(int[] A, int n, int k) {
+	int[] copyA = Arrays.copyOfRange(A, 0, A.length);
+	int[] result = new int[k];
+	int key = findK(copyA, n, k);
+	int j = 0;
+	for(int i=0;i<A.length;i++){
+		if(A[i]<=key&&j<k)
+			result[j++]=A[i];
+	}
+	return result;
+}
+public static int findK(int[] A, int n, int k) {
+	int low = 0,high=n-1;
+	int loc = partiton(A, low, high);
+	while(loc!=k-1){
+		if(loc>k-1){
+			high = loc-1;
+			loc = partiton(A, low, high);
+		}else{
+			low = loc+1;
+			loc = partiton(A, low, high);
+		}
+	}
+	return A[loc];//包前不不包括后边界
+}7.9.2  堆排序求TopN
+　　通过快速排序的方法求TopN的时间复杂度为O(n)，但该方法需要一次性全部将数据读入内存，并且会改变输入数组。为了解决上述问题，可采用堆排序实现，该方法特别适合海量数据处理，时间复杂度为：O(nlogK)，基本思想入下：
+　　1. 新建一个大小为k的缓冲数组，用于构建大顶堆
+　　2. 一次读入，原始数组中剩余数据，判断是否小于大顶堆的堆顶，小于则替换调整
+基本思想：直接将最后节点替换首节点，然后向下调整
+public static void heapTopK(int[] a,int k){//大顶堆
+	int len = a.length;
+	int[] heap = Arrays.copyOfRange(a,0,k);
+	buildHeap(heap);
+	for(int i=k;i<len;i++)
+		if(a[i]<heap[0]){
+			heap[0] = a[i];
+			adjustHeap(heap,0,k-1);
+		}
+}7.9.3 堆排序数据流中的中位数
+	如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中间的数值。如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
+                   左                          右
+                   大                          小
+                   5                           10
+                 /    \                      /     \
+                2      4                   15     43  
+public class Solution {
+    private int count=0;
+    private PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+	private PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(15, new 
+        Comparator<Integer>() {
+        @Override
+        public int compare(Integer o1, Integer o2) {
+            return o2 - o1;
+        }
+	});
+	public void Insert(Integer num) {
+    	if(count%2==0){
+            maxHeap.offer(num);
+            int maxNum=maxHeap.poll();
+            minHeap.offer(maxNum);
+        }else{
+            minHeap.offer(num);               
+            int minNum=minHeap.poll();
+            maxHeap.offer(minNum);
+        }
+        count++;
+    }
+
+    public Double GetMedian() {
+        if (count %2 == 0) {
+        	return new Double((minHeap.peek() + maxHeap.peek())) / 2;
+    	} else {
+        	return new Double(minHeap.peek());
+    	}
+    }
+}7.9.4 快速排序将大小写字母分开
+描述：该问题一次划分即可解决，若不要求划分后是否改变元素相对位置，则可用首尾指针
+      法，否则用前后指针法。
+public static void partitionUpLow (char[]ch,int low,int high){
+	while(low<high){ //因为大小写约束并不指某一字符，所以不用设置关键字key
+		while(low<high&&Character.isUpperCase(ch[high]))high--;
+		while(low<high&&Character.isLowerCase(ch[low]))low++;
+		char temp = ch[high];
+		ch[high] = ch[low];
+		ch[low] = temp;
+	}
+}7.9.5  快速排序划分非0元素
+描述：该问题一次划分即可解决，但要求划分后不改变元素相对位置，所以用前后指针法
+public static void partitionZero(int[]a,int low,int high){
+	int last = low-1,key = 0;
+    for(int before = low;before<=high;before++)
+    	if(a[before]!=key){
+            last++;
+    		int temp = a[before];
+    		a[before] = a[last];
+    		a[last] = temp;
+    	}
+}7.9.6  划分奇数和偶数
+【非稳定版】奇数+偶数
+public void reOrderArray(int [] a){
+    int low = 0,high = a.length-1;
+    while(low<high){
+        while(low<high&&a[high]%2==0)high--;
+        while(low<high&&a[low]%2!=0)low++;
+        int temp = a[low];
+        a[low] = a[high];
+        a[high] = temp;
+    }
+}【稳定版】快速排序+插入排序
+public void reOrderArray2(int [] a){
+    int i = -1,len = a.length;
+    for(int j = 0;j<len;j++){
+        if((a[j]&1)!=0){
+            int key= a[j];
+            ++i;//插入位置
+            while(j>i){
+               a[j]=a[j-1];
+               j--;
+            }   
+            a[i] = key;
+        }
+    }
+}7.9.7  快速排序划分三色球
+基本思想：用0,1,2分别代表三种颜色的球，t0,t1,t2分别为 三种球的指针
+          t0 = 0      t1 = 1    t2 = 2
+          t1:  [0,len-1] 做遍历        t0:   上移       t2:  下移
+public static void partitionball2(int[] a,int low,int high){
+	int t0=t1=low, t2 = high;
+	while(t1<=t2){
+		if(a[t1]==0){
+			exchange(a, t1, t0);//当和最后的t0交换时,t0在t1前面能够保证
+			t1++;t0++;//交换的元素都属于t1，所以交换完无需判断，直接移动
+		}
+		else if(a[t1]==1)
+			t1++;
+		else {
+			exchange(a, t1, t2);//当和最后的t2交换时
+			t2--;//对交换完还要对交换后的元素继续判断，所以t1不移动
+		}
+	}
+}7.9.8 归并排序求反序对的个数
+基本思想：归并排序
+          1. 将数组划分为多个有序段
+          2. 根据两个将归并的有序子段进行计数
+          3. L[l1]>R[l2] 则有mid-l1+1个逆序对
+public static void mergeSort(int[] a){
+	int len = a.length;
+	int steps = (int) (Math.log(len)/Math.log(2))+1;
+	for(int i=1;i<=steps;i++){//归并趟数
+		int h = (int) Math.pow(2, i); //归并步长
+		for(int low=0;low<len-1;low=low+h){ //合并子段
+			int mid = (low+h/2)-1;//前半段的结尾h/2
+			if(mid<len-1){ //前半段大于总长才合并
+				int high = low+h-1;//当后半段结尾大于总长时，要调整
+				if(high>len-1)
+					high=len-1;
+				merge(a,low,mid,high);
+			}
+		}
+	}
+}
+public static void merge(int[] a,int low,int mid,int high){
+	int[] temp = new int[high-low+1];
+	int l1 = low,h1=mid;
+	int l2 = mid+1,h2=high;
+	int k=0;
+	while(l1<=h1&&l2<=h2){
+		if(a[l1]<=a[l2])
+			temp[k++]=a[l1++];
+		else{
+			reverseCount+=h1-l1+1;
+			temp[k++]=a[l2++];
+		}
+	}
+	while(l1<=h1)//有等号
+		temp[k++]=a[l1++];
+	while(l2<=h2)
+		temp[k++]=a[l2++];
+	System.arraycopy(temp, 0, a, low, (high-low)+1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8 查找
+8.1 查找算法
+8.1.1 二分查找
+【递归方式】
+public static int binSearch(int[] a,int low,int high,int key){
+	if(low<=high){//相等是为了考虑，元素个数为奇数的情况
+		int mid = (low+high)/2;
+		if(a[mid]==key)
+			return mid;
+		else if(a[mid]>key)
+			return binSearch(a,low,mid-1,key);//必须return
+		else
+			return binSearch(a, mid+1, high, key);
+	}
+	return -1;
+}【非递归方式】
+public static int binSearch(int[] a,int low,int high,int key){
+	while(low<=high){//相等是为了考虑，元素个数为奇数的情况
+		int mid = (low+high)/2;
+		if(a[mid]==key)
+			return mid;
+		else if(a[mid]>key)
+			high=mid-1;
+		else
+			low=mid+1;
+	}
+	return -1;
+}8.1.2 散列查找
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8.2 查找算法应用
+8.2.1 二分查找字符串位置
+基本描述：有一个排过序的字符串数组，但是其中有插入了一些空字符串，请设计一个算法，找出给定字
+          符串的位置。算法的查找部分的复杂度应该为log级别。
+          ["a","b","","c","","d"],6,"c"===>3
+基本原理：对二分查找进行修改，若mid为空字符串，则将mid移动到离其最近的非空字符串位置
+public int findString(String[] str, int n, String x) {
+    if(str==null||x==null||x.isEmpty())
+        return -1;
+    int low = 0,high = n-1;
+    while(low<=high){
+        int mid = (low+high)/2;
+        if(str[mid].isEmpty()){
+            int left = mid-1,right = mid+1;
+            //找到mid最近的非空字符串
+            while(true){
+                if(left<low&&right>high)
+                    return -1;
+                else if(right<high&&!str[right].isEmpty()){
+                    mid = right;
+                    break;
+                }
+                else if(left>low&&!str[left].isEmpty()){
+                    mid = left;
+                    break;
+                }
+                right++;
+                left--;
+            }
+        }
+        if(str[mid].equals(x))
+            return mid;
+        else if(str[mid].compareTo(x)<0)
+            low = mid+1;
+        else
+            high = mid-1;
+    }
+    return -1;
+}8.2.2 数字在排序数组中出现次数
+public int GetNumberOfK(int [] array , int k) {
+	int num = 0;
+    if(array!=null&&array.length>0){
+        int first = GetFirstK(array,k);
+        int last = GetLastK(array,k);
+        if(first>-1&&last>-1)
+            num = last-first+1;
+    }
+    return num;
+}
+public int GetFirstK(int[] array,int k){
+    int low = 0,high = array.length-1;
+	while(low<=high){
+       int mid = (low+high)/2;
+       if(array[mid]==k){
+           if(mid>0&&array[mid-1]!=k||mid==0)
+               return mid;
+           else
+               high = mid-1;
+       }
+       else if(array[mid]<k)
+           low = mid+1;
+       else
+           high = mid-1;
+	}
+    return -1;
+}
+public int GetLastK(int[] array,int k){
+    int low = 0,n = array.length,high = n-1;
+	while(low<=high){
+       int mid = (low+high)/2;
+       if(array[mid]==k){
+           if(mid<n-1&&array[mid+1]!=k||mid==n-1)
+               return mid;
+           else
+               low = mid+1;
+       }
+       else if(array[mid]<k)
+           low = mid+1;
+       else
+           high = mid-1;
+	}
+    return -1;
+}8.2.3 查找旋转数组最小数
+public int minNumberInRotateArray(int[] array) {
+	int len = array.length;
+	if(array==null||len<1)
+		return 0;
+	int low = 0,high = len-1,mid = 0;
+	while(array[low]>=array[high]){
+		if((high-low)==1){
+			mid = high;
+			break;
+		}
+		mid = (low+high)/2;
+		if(array[low]==array[high]&&array[low]==array[mid])
+			return findMinInOrder(array,low,high);
+		if(array[mid] >= array[low])
+			low = mid;
+		if(array[mid] <= array[high])
+			high = mid;
+	}
+	return array[mid];
+}
+public int findMinInOrder(int[] a, int low, int high) {
+	int min = a[low];
+	for(int i=low+1;i<=high;i++)
+		if(min>a[i])
+			min = a[i];
+	return min;
+}8.2.4 查找排序二维数组元素（offer:p40）
+基本描述：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺
+          序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。 
+public boolean Find(int[][] array,int target) {
+    if(array!=null&&array.length>0&&array[0].length>0){
+        int rows = array.length,cols = array[0].length;
+        int row = 0,col = cols-1;
+        while(row<rows&&col>=0){
+            if(array[row][col]==target)
+                return true;
+            else if(array[row][col]>target)
+                col--;
+            else row++;
+        }
+    }
+    return false;
+}
+
+
+
+
+9 位运算
+9.1  位运算查找唯一不重复元素
+9.1.1  找出数组中只出现一次的数字(其他均出现两次)
+基本思想：找出数组中只出现一次的数字
+　　　　　根据亦或特点：A^A=0
+　　　　　　　　　　　　A^A=1
+public static int findOne(int[] a){
+	 int result = 0;
+	 int len = a.length;
+	 for(int i=0;i<len;i++)
+		 result^=a[i];
+	 return result;
+}9.1.2  找出数组中只出现一次的数字(其他均出现K次)
+基本思想：处理一个整数之外其他的均出现k次，找只出现一次的
+　　　　　1. 将数字的每位移入对应的int[32]中
+　　　　　2. 如果某位不能被k整除，则该数只出现一次
+public static int findOnce(int[] a,int k){
+	int len = a.length;
+	int[] bitCount = new int[32];
+	int num=0;
+	for(int i=0;i<len;i++)//遍历每个元素
+		for(int j=0;j<32;j++)//每个元素拆分32为统计，即右移
+			bitCount[j]+=((a[i]>>j)&1);
+	for(int i=0;i<32;i++)
+		if((bitCount[i]%k)!=0)
+			num = num+(1<<i);//将元素还原左移
+	return num;	
+}9.2  位运算查找查找唯一重复元素
+异或法】设重复数为A，其余数亦或为B，相同亦或一定为0，0亦或任何一个数都为其本身
+          数组元素异或：A^A^B    并不是任意两个不同数亦或为0，因为这是十进制情况，所以不成立
+          元素范围异或：A^B
+          两者异或：A^B^( A^A^B)=A
+public static int findDup2(int[] a){
+	int len = a.length; int sum1=0,sum2=0;
+	for(int i=0;i<len-1;i++){
+		sum1^=(i+1);
+		sum2^=a[i];
+	}
+	sum2^=a[len-1];
+	return sum2^sum1;
+}9.3  位运算计算去掉重复字符
+基本思想: 1. 常见字符一共256个，可申请长度为256的int数组来记录每个字符出现次数
+         2. 由于该题只是判断字符是否出现只有0,1两种结果，所以可用8个int表示
+         3. 当某个字符已经出现过相应位为1，对应字符置‘\0’
+         4. 选出不为’\0’的字符
+注意：对字符ASCII为23的字符将被存储到：23/32==0，23%32=23，第0个int值的23上。
+public static String delDup1(String s){
+	int[] bitMap = new int[8];//8x32=256位,分四组表示
+	char[] c = s.toCharArray();   int len = c.length;
+	for(int i=0;i<len;i++){//按位图去除重复字符
+		int index = (int)c[i]/32;
+		int shift = (int)c[i]%32;
+		if((bitMap[index]&(1<<shift))!=0)
+			c[i]='\0';
+		bitMap[index]|=(1<<shift);
+	}
+	int k=0; //去出字符串中的'\0'
+	for(int i=0;i<len;i++)
+		if(c[i]!='\0')
+			c[k++]=c[i];
+	return new String(c,0,k);
+}9.4  位运算求二进制中1的个数
+9.4.1  常规法循环32次
+public int  NumberOf1(int n) {
+    int bit = 1,count = 0;
+    while(bit!=0){//>0或者<0者==1都不对
+    	if((n&bit)!=0)
+    		count++;
+    	bit <<=1;
+    }
+    return count;
+}9.4.2 特殊法有几个1循环几次(offer:p81)
+public int  NumberOf1(int n) {
+	int count = 0;
+	while(n!=0){
+		count++;
+		n = (n-1)&n;
+	}
+	return count;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 发散思维
+10.1 求1+2+·····n
+基本描述：求1+2+3+...+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
+基本原理：需利用逻辑与的短路特性实现递归终止
+public int Sum_Solution(int n) {
+   int sum = n;
+   (sum>0)&&((sum+=Sum_Solution(n-1))>0);
+   return sum;
+}10.2 不用加减乘除做加法
+基本描述：写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、/四则运算符号。
+public int Add(int num1,int num2) {
+    while(num2!=0){//num2表示进位值
+    	int plus = num1^num2;//不带进位的相加
+    	num2 = (num2&num1)<<1;//进位值
+    	num1 = plus;//用于和进位值相加
+    }
+    return num1;
+}10.3 无判断MAX
+基本描述：请编写一个方法，找出两个数字中最大的那个。条件是不得使用if-else等比较和判断运算符。
+给定两个int a和b，请返回较大的一个数。若两数相同则返回任意一个。
+基本思想：位运算，查看符号位
+public class Max {
+    /**
+     * a>b: (a-b)>>31=0
+     * a<b: (a-b)>>31=1
+     * a-=b*(b>>31)==>a=a-(a-b)*flag;
+     * a>b:flag=0;===>a-=b*0=a
+     * a<b:falg=1;===>a-=b*1=b
+     */
+    public int getMax(int a, int b) {
+        b=a-b;
+        int flag=b>>31;
+        a-=b&flag;
+        return a;
+    }
+}
+
+
+
+
+11 算法模型抽象部分
+11.1  动态规划
+11.1.1 斐波那契数列
+public int Fibonacci(int n) {
+	int[] result = {0,1};
+	if(n<2)
+		return result[n];
+	int fibN=0;
+	for(int i=2;i<=n;i++){
+		fibN = result[1]+result[0];
+		result[0]=result[1];
+		result[1]=fibN;
+	}
+	return fibN;
+}11.1.2  跳台阶问题
+基本描述：一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少
+         种跳法。开始位于台阶之下，0级到1级有1种跳法。
+public int JumpFloor(int n) {
+	int[] result = {0,1,2};
+	if(n<3)
+		return result[n];
+	int steps = 0;
+	for(int i=3;i<=n;i++){
+		steps = result[2]+result[1];
+		result[1]=result[2];
+		result[2]=steps;
+	}
+	return steps;
+}基本描述：有一楼梯共m级，刚开始时你在第一级，若每次只能跨上一级或者二级，要走上m级，共有多
+          少走法？注：规定从一级到一级有0种走法。
+public int countWays(int n) {
+　　int[] result = {0,0,1,2};
+　　int steps = 0;
+    if(n<4)
+    	return result[n];
+    for(int i=4;i<=n;i++){
+    	steps = result[3]+result[2];
+    	result[2] = result[3];
+    	result[3] = steps;
+　　}
+　　return steps;
+}11.1.3  变态跳台阶
+基本描述：一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n
+          级的台阶总共有多少种跳法。
+基本思想：f(1) = 1  //f(2-2) 表示2阶一次跳2阶的次数。
+          f(2) = f(2-1) + f(2-2) = f(1)+f(0)       
+          f(3) = f(3-1) + f(3-2) + f(3-3) = f(2)+f(1)+f(0) = f(2)+f(2) = 2*f(2)
+          ...
+          f(n-1) = f(n-2) + f(n-3) + ... + f((n-1)-(n-1)) = f(n-2) + f(n-3) + ...+ f(1)+f(0)
+          f(n) = f(n-1) + f(n-2) + f(n-3) + ... + f(n-(n-1)) + f(n-n) = f(n-1)+ f(n-2)+...+f(1)+f(0) = 2*f(n-1) 
+递推公式：
+
+public int JumpFloorII(int n) {
+	 int[] result = {0,1};
+		if(n<2)
+			return result[n];
+		int steps = 0;
+		for(int i=2;i<=n;i++){
+			steps = 2*result[1];
+			result[1] = steps;
+		}
+		return steps;
+ }11.1.4  矩形覆盖
+基本描述：我们可以用2*1的小矩形横着或者竖着去覆盖更大的矩形。请问用n个2*1的小矩形无重叠地
+          覆盖一个2*n的大矩形，总共有多少种方法？
+public int RectCover(int n) {
+	int[] result = {0,1,2};
+	if(n<3)
+		return result[n];
+	int num = 0;
+	for(int i=3;i<=n;i++){
+		num = result[2]+result[1];
+		result[1]=result[2];
+		result[2]=num;
+	}
+	return num;
+}11.2 分治策略
+11.2.1 小球距离
+小东和三个朋友一起在楼上抛小球，他们站在楼房的不同层，假设小东站的楼层距离地面N米，球从他手里自由落下，每次落地后反跳回上次下落高度的一半，并以此类推知道全部落到地面不跳，求4个小球一共经过了多少米？(数字都为整数)给定四个整数A,B,C,D，请返回所求结果。
+public int calcDistance(int A, int B, int C, int D) {
+    int result=A+B+C+D;
+    return result+distance(A)+distance(B)+distance(C)+distance(D);
+}
+private int distance(int n) {
+    if(n<=0)
+        return 0;
+    int mod=n%2;
+    return distance(n/2)+(n/2+mod/2)*2;
+}11.3 扑克牌顺序(offer P227)
+基本思想：LL今天心情特别好,因为他去买了一副扑克牌,发现里面居然有2个大王,2个小王(一副牌原本是54张^_^)...他随机从中抽出了5张牌,想测测自己 的手气,看看能不能抽到顺子,如果抽到的话,他决定去买体育彩票,嘿嘿！！“红心A,黑桃3,小王,大王,方片5”,“Oh My God!”不是顺子.....LL不高兴了,他想了想,决定大\小 王可以看成任何数字,并且A看作1,J为11,Q为12,K为13。上面的5张牌就可以变成“1,2,3,4,5”(大小王分别看作2和4),“So Lucky!”。LL决定去买体育彩票啦。 现在,要求你使用这幅牌模拟上面的过程,然后告诉我们LL的运气如何。为了方便起见,你可以认为大小王是0。
+public boolean isContinuous(int [] numbers) {
+    if(numbers==null||numbers.length!=5)
+        return false;
+	Arrays.sort(numbers);
+    int zeroCount=0,gapCount=0;
+    for(int i=0;i<5;i++){
+        if(numbers[i]==0){
+            zeroCount++;
+            continue;
+        }else if(i+1<5){
+            if(numbers[i]==numbers[i+1])
+                return false;
+            gapCount += numbers[i+1]-numbers[i]-1;
+        }        
+    }
+    return gapCount>zeroCount?false:true;
+}
+
+
+
+
+
+
+12 算法效率
+12.1 从1到n整数中1出现的次数
+基本描述：求出1~13的整数中1出现的次数,并算出100~1300的整数中1出现的次数？为此他特别数了一
+          下1~13中包含1的数字有1、10、11、12、 13因此共出现6次,但是对于后面问题他就没辙了。
+           ACMer希望你们帮帮他,并把问题更加普遍化,可以很快的求出任意非负整数区间中1出现次数。
+基本原理：
+    1. 取第i位左边（高位）的数字，乘以  10 i?1 ，得到基础值a 。
+    2. 取第i位数字，计算修正值：
+        如果大于X，则结果为a+ 10 i?1。
+        如果小于X，则结果为a。
+        如果等X，则取第 i位右边（低位）数字，设为b ，最后结果为a+b+1。 
+public int NumberOf1Between1AndN_Solution(int n) {
+    String num = n+"";
+    int X = 1,len = num.length(),radix = 1,count = 0;
+    for(int i=1;i<=len;i++){
+    	radix*= 10;
+    	int radix2 = radix/10;
+    	int left = n/radix,mid = (n-left*radix)/radix2,right = (n-left*radix)%radix2;
+    	count += left*radix2;
+    	if(mid==X)
+    		count += right+1;
+    	if(mid>X)
+    		count += radix2;
+    }
+    return count;
+}12.2 约瑟夫环
+问题描述：每年六一儿童节,NowCoder都会准备一些小礼物去看望孤儿院的小朋友,今年亦是如此。HF作为NowCoder的资深元老,自然也准备了一些小游 戏。其中,有个游戏是这样的:首先,让小朋友们围成一个大圈。然后,他随机指定一个数m,让编号为0的小朋友开始报数。每次喊到m的那个小朋友要出列唱首 歌,然后可以在礼品箱中任意的挑选礼物,并且不再回到圈中,从他的下一个小朋友开始,继续0...m-1报数....这样下去....直到剩下最后一个小 朋友,可以不用表演,并且拿到NowCoder名贵的“名侦探柯南”典藏版(名额有限哦!!^_^)。请你试着想下,哪个小朋友会得到这份礼品呢？
+12.2.1 高效方式O(mn)
+public int getResult(int n, int m) {
+    int result = 0;
+    for(int i=1;i<n;i++)
+    	result = (result+m)%i;
+    return result+1;
+}12.2.2 链表方式
+public int getResult2(int n, int m) {
+	LinkedList<Integer> link = new LinkedList<Integer>();
+	for(int i=1;i<=n;i++)
+		link.add(i);
+	int del = 0;
+	while(link.size()>1){
+		int index = (del+m)%link.size();
+		if(index==0)
+			del = link.size()-1;
+		else 
+			del = index-1;
+		link.remove(del);
+	}
+	return link.get(0);
+}12.2.3  线性表方式
+public int LastRemaining_Solution(int n, int m) {
+    if(n<1||m<1)
+        return -1;
+    int i=-1,step=0,count=n;
+    int[] a=new int[n];
+    while(count>0){
+        i++;
+        if(i>=n) 
+            i=0;
+        if(a[i]==-1)
+            continue;
+        step++;
+        if(step==m){
+            a[i]=-1;
+            step=0;
+            count--;
+        }
+    }
+    return i;
+}12.3 求数值的次方
+boolean Invalid = false;
+public double Power(double base, int exponent) {
+    if(base==0.0&&exponent<0){
+        Invalid = true;
+        return 0;
+    }
+    int absEx = exponent;
+    if(exponent<0)
+        absEx = -exponent;
+    double result = PowerAbs(base,absEx);
+    if(exponent<0)
+        result = 1.0/result;
+    return result;
+    
+}
+public double PowerAbs(double base, int exponent){
+    double result = 1.0;
+    for(int i=1;i<=exponent;i++)
+        result *= base;
+    return result;
+}
+public boolean equal(double a,double b){
+    if(a-b<0.00000001&&a-b>-0.00000001)
+        return true;
+    else
+        return false;
+}12.4 无判断MAX
+基本秒速：
+
+public class Max {
+    /**
+     * a>b: (a-b)>>31=0
+     * a<b: (a-b)>>31=1
+     * a-=b*(b>>31)==>a=a-(a-b)*flag;
+     * a>b:flag=0;===>a-=b*0=a
+     * a<b:falg=1;===>a-=b*1=b
+     */
+    public int getMax(int a, int b) {
+        b=a-b;
+        int flag=b>>31;
+        a-=b&flag;
+        return a;
+    }
+}
+
+
+
+
+13 海量数据处理
+	海量数据处理，无就是基于海量数据上的存储、处理、操作。何谓海量，就是数据量太大，所以导致要么是无法在较短时间内迅速解决，要么是数据太大，导致无法一次性装入内存。为了完成海量数据的处理，可采用如下解决方案：
+    1. 分而治之/hash映射 + hash统计 + 堆/快速/归并排序；
+    2. 双层桶划分
+    3. Bloom filter/Bitmap；
+    4. Trie树/数据库/倒排索引；
+    5. 外排序；
+    6. 分布式处理之Hadoop/Mapreduce。
+13.1  Hash分治策略
+基本思想：hash散列分治策略，主要是通过利用hash映射可以将大文件中的元素映射到不同的文件中，然
+          后依次处理小文件的内容。Hash分治策略，主要通过是降低问题的规模，在小规模的模型上解决
+          具体问题。大而化小，各个击破，缩小规模，逐个解决。
+应用条件：如果两个元素的Hash值不同，那么这两个元素的值一定不同。因此，经过hash映射划分出的多
+          个小规模部分可以相对独立，互不影响。
+13.1.1  求两个大文件的交集
+基本描述：给定a、b两个文件，各存放50亿个url，每个url各占64字节，内存限制是4G，让你找出a、b
+          文件共同的url
+基本思想：如果两个元素的Hash值不同，那么这两个元素的值一定不同。因此，可已通过hash分治法来
+将两个大文件(a,b)划分为两组小文件(a0,a1,a2....,)和(b0,b1,b3....,)。由Hash表的特性可知，重复元素只可能在同类的桶中所以，两个文件的交集求法为(a0 vs b0, a1 vs b1....a999 vs b999)
+算法伪码：
+public void intersect(File f1,File f2) throws Exception{
+	int n = 1024;
+	Set<String> s = new HashSet<String>();
+	List<File> fileList1 = hash(f1,n);
+	List<File> fileList2 = hash(f2,n);
+	for(int i=0;i<n;i++){
+		Set<String> s1 = load(fileList1.get(i));
+		FileInputStream fis = new FileInputStream(fileList2.get(i));
+		InputStreamReader isr = new InputStreamReader(fis);
+		BufferedReader br = new BufferedReader(isr);
+		String str = null;
+		while((str=br.readLine())!=null){
+			if(s1.contains(str))
+				s.add(str);
+		}
+	}
+}13.1.2   海量数据排序
+基本描述：有10个文件，每个文件1G，每个文件的每一行存放的都是用户的query，每个文件的query都可
+          能重复。要求你按照query的频度排序。
+基本思想：1. hash映射：顺序读取10个文件，按照hash(query)%10的结果将query写入到另外10个文件中。
+           通过hash映射，可以将相同的query划分到同一个文件中。这样新生成的文件每个的大小大约
+           也1G（假设hash函数是随机的），并且会包含有大量重复元素。
+         2. hash统计：找一台内存在2G左右的机器，依次对用hashmap来统计每个query出现的次数。。
+         3. 堆/快速/归并排序：利用快速/堆/归并排序按照出现次数进行排序，
+         4. 将排序好的query和对应的query_cout输出到文件中，这样得到了10个排好序的文件。
+         5. 对这10个文件进行归并排序（内排序与外排序相结合）。
+public void querySort(List<File> list) throws Exception{
+	int n = 10;
+	List<File> fileList = hash(list,n);
+	wordCount(fileList);
+	for (File file : fileList) 
+		memSort(fileList);
+	outSort(fileList);
+}13.1.3  海量数据TopN
+基本描述：有一个1G大小的一个文件，里面每一行是一个词，词的大小不超过16字节，内存限制大小是1M。
+          返回频数最高的100个词。
+基本思想：1. hash映射：顺序读取文件，对于每个词x，取hash(x)%5000，然后按照该值存到5000个小文件   
+           (记x0,x1,...x4999)这样每个文件大概是200k左右。如果其中的有的文件超过了1M大小，还可以
+           按照类似的方法继续往下分，直到分解得到的小文件的大小都不超过1M。
+          2. hash统计：对每个小文件，采用trie树/hash_map等统计每个文件中出现的词以及相应的频率。
+          3. 堆/归并排序：取出出现频率最大的100个词，可以用含100个结点的最小堆
+          4. 把100个词及相应的频率存入文件，这样又得到了5000个文件。
+          5. 把这5000个文件进行归并，类似于归并排序的过程。
+public void queryTopN(List<File> list){
+	int n = 1024;
+	List<File> fileList = hash(list,n);
+	wordCount(fileList);
+	for (File file : fileList) 
+		heapSort(fileList);
+	outSort(fileList);
+}13.1.4  海量数据TopN
+基本描述：海量日志数据，提取出某日访问百度次数最多的那个IP
+基本思想：1. hash映射：顺序读取文件，对于每个IP取hash(IP)%1024，划分到1024个小文件 
+                       IP地址最多有2^32=4GB个，因此，hash为：hash(IP)%1024
+          2. hash统计：对每个小文件，采用trie树/hash_map等统计每个文件中出现的词以及相应频率
+          3. 内部排序：堆排序/归并排序/快速排序
+          4. 外部排序：归并排序/堆排序
+13.2  Bit-Map
+基本思想：其原理就是使用位数组来表示某些元素是否存在，采用1bit或者多bit为单位来存储元素。
+应用场景：适用于海量数据查找、判断重复、去重、排序
+应用原理：以空间换时间，若采用位数组来存储还是内存还是不够，可采用hash分治法划分
+使用条件：必须确定重复次数，或者可以确定重复次数不关心。同时，还要确定待排序序列最大值
+BitMap的结构如下代码所示
+public class BitMap {
+	int BITWORD = 32;//00000~~11111
+	int SHIFT = 5;   //2^5
+	int MASK = 0x1F; //0001 1111校验
+	int N = 10;//所表示数的最大数
+	int[] bitMap;
+	public BitMap(){
+		bitMap = new int[1+N/BITWORD];//申请一个长度为N的位数组
+	}
+	public BitMap(int N){
+		this.N = N;//所表示数的最大数
+		bitMap = new int[1+N/BITWORD];//申请一个长度为N的位数组
+	}
+	
+	/**
+	 *   (i&MASK) : 用于屏蔽高出SHIFT位的部分，只保留[0,SHIFT]的数
+	 * 1<<(i&MASK): 将1移动到第i&MASK位，其中i&MASK∈[0,BITWORD-1]
+	 *   i>>SHIFT : 用于确定bitMap的位数组索引，相当于i/32
+	 *              1. 数字0-31被分配到      bitMap[0]
+	 *              2. 数字32-63被分配到    bitMap[1]
+	 *              3. 数字64-127被分配到  bitMap[2]、bitMap[3]
+	 *              3. 数字128-256被分配到bitMap[4]、bitMap[5]、bitMap[6]、bitMap[7]
+	 */
+	public void set(int i){//将第i个位置设1,0<=i<=N
+		bitMap[i>>SHIFT] |= (1<<(i&MASK));
+	}
+	public void clear(int i){//将第个位置设0,0<=i<=N
+		bitMap[i>>SHIFT] &= ~(1<<(i&MASK));
+	}
+	public int test(int i){//测试第个位置,0<=i<=N
+		return bitMap[i>>SHIFT]&(1<<(i&MASK));
+	}
+}13.2.1  排序
+基本思想：1. 确定待排序元素的区间，根据区间确定bit数，以及bit数组大小
+          2. 将待排序元素全部映射到bit数组中的每一位
+		  3. 按顺序对位数组中的每1个bit进行判断，若存在则将该位所对应的元素输出
+基本条件：必须明确待排序列的重复元素个数，根据最大重复元素个数，确定位数组的单位是多少bit
+          当元素重复次数太多时，或不确定重复多少次时，不能使用该方法
+【对不重复的序列排序】
+public static void bitMapSort(int[] a,int N){
+	BitMap bitMap = new BitMap(N);
+	for (int i : a) 
+		bitMap.set(i);
+	int k = 0 ;
+	for(int i=0;i<N;i++)
+		if(bitMap.test(i)!=0&&i<a.length)
+			a[k++] = i;
+}13.2.2  去重
+基本描述：已知某个文件内包含一些电话号码，每个号码为8位数字，统计不同号码的个数。
+基本思想：8为数字即0000 0000 ----9999 9999，每个数对应一位，共需要1x108位
+          1/32x108个int变量==>1/8 x108BYte==>1/8 x105KB==>1/8 x102MB≈12MB
+          1024=1x103，也就是说1亿个数用可用3125000个int值表示，占用12M
+          将电话号码映射到总位数为1亿的bitMap中，读入时并判断电话号码是否存在
+  
+//位图判断重复
+public static List<Integer> bitMapDeup (int[] a,int N){
+	ArrayList<Integer> list = new ArrayList<Integer>();
+	BitMap bitMap = new BitMap(N);
+	for(int i=0;i<a.length;i++){
+		if(bitMap.test(a[i])==0)//等于0表示该元素还没有存入
+			list.add(a[i]);
+		bitMap.set(a[i]);
+	}
+	return list;
+}13.2.3  查找
+基本描述：给40亿个不重复的unsigned int的整数，没排过序的，然后再给一个数，如何快速判断这个数
+          是否在那40亿个数当中。
+基本思想：将40亿个数映射到由232 位组成的位数组bitMap中，该数组将占29MB=512M
+          从bitMap中查找指定数字num
+//位图查找
+public static boolean bitMapSearch(int[] a,int N,int key){
+	BitMap bitMap = new BitMap(N);
+	for(int i=0;i<a.length;i++)
+		bitMap.set(a[i]);
+	return (bitMap.test(key)!=0)?true:false;
+}13.2.4  查找只出现一次的数（2-bitMap）
+//位图查找1次
+public static List<Integer> bitMapSearchOne(int[] a,int N){
+	ArrayList<Integer> list = new ArrayList<Integer>();
+	BitMap bitMap = new BitMap(N*2);
+	for(int i=0;i<a.length;i++){
+		if(bitMap.test(a[i]*2)==0&&bitMap.test(a[i]*2+1)==0)
+			bitMap.set(a[i]*2);
+		else if(bitMap.test(a[i]*2)!=0&&bitMap.test(a[i]*2+1)==0){
+			bitMap.clear(a[i]*2);
+			bitMap.set(a[i]*2+1);
+		}
+	}
+	for(int i=0;i<a.length;i++)
+		if(bitMap.test(a[i]*2)!=0&&bitMap.test(a[i]*2+1)==0)
+			list.add(a[i]);
+	return list;
+}【小小改进】
+//位图查找1次
+public static List<Integer> bitMapSearchOne2(int[] a,int N){
+	ArrayList<Integer> list = new ArrayList<Integer>();
+	BitMap bitMap = new BitMap(N*2);
+	for(int i=0;i<a.length;i++){
+		if(bitMap.test2(a[i]*2,3)==0) //如果该位是0 0
+			bitMap.set(a[i]*2);
+		else if(bitMap.test2(a[i]*2,1)!=0){ //如果该位是01
+			bitMap.clear(a[i]*2);
+			bitMap.set(a[i]*2+1);
+		}
+	}
+	for(int i=0;i<a.length;i++)
+		if(bitMap.test2(a[i]*2,1)!=0) //如果该位是01
+			list.add(a[i]);
+	return list;
+}
+public int test2(int i,int f){//测试第个位置,0<=i<=N
+	return bitMap[i>>SHIFT]&(f<<(i&MASK));
+}13.3  倒排索引
+基本描述：倒排索引也称为反向索引、置入档案或反向档案，是一种索引方法，用来存储全文索引下某个单词与一个文档或一组文档的存储位置的映射。主要用来，搜索引擎请中关键字索引。
+基本过程：
+1. 统计每个文档当中每个单词的出现次数，作为每个文档的检索权重
+
+2. 统计每个文档当中每个单词的出现次数，作为每个文档的检索权重
+
+3. 最后统计出每个单词的，文档列表以及相应权重
+
+倒排索引：
+
+13.4 双层桶思想
+基本思想：因为元素范围很大，不能利用直接寻址表。所以，按照大小划分为多个区域。通过多次划分，逐
+          步确定范围。最后，在一个可以接受的范围内进行。可以通过多次缩小，双层只是一个例子。
+基本思想：
+          http://fhqllt.iteye.com/blog/1008303
+
+          http://blog.csdn.net/lixam/article/details/8845310
+http://blog.sina.com.cn/s/blog_55ba8b4601012ken.html
+查找
+求交集
+排序
+http://blog.csdn.net/v_july_v/article/details/6279498
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+　　
+
+　　 
+
+　　
+
+0
+　　
+
+　　
+
+　　
+
