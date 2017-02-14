@@ -61,8 +61,52 @@
                         }
                     });
                 })
+                $("#confirm5").click(function(){
+                    $.ajax({
+                        url:'http://127.0.0.1:8080/jsonp3',
+                        type: "get",
+                        async: false,
+                        dataType: "jsonp", //返回一个JsonP类型
+                        success: function(json) {
+                            alert(456);
+                            alert(JSON.toString(json));
+                        },
+                        error: function(){alert('Error');}
+                    });
+                })
+                $("#confirm6").click(function(){
+                    $.ajax({
+                        url:'http://127.0.0.1:8080/jsonp4',
+                        type: "get",
+                        async: false,
+                        dataType: "jsonp", //返回一个JsonP类型
+                        jsonp: "callbackparam", //服务端用于接收callback调用的function名的参数
+                        jsonpCallback: "success_jsonpCallback", //callback的function名称,服务端会把名称和data一起传递回来
+                        success: function(json) {
+                            alert(json);
+                        },
+                        error: function(){alert('Error');}
+                    });
+                })
+                $("#confirm7").click(function(){
+                    $.ajax({
+                        url:'http://127.0.0.1:8080/jsonp5',
+                        type: "get",
+                        async: false,
+                        dataType: "jsonp", //返回一个JsonP类型
+                        jsonp: "callbackparam", //服务端用于接收callback调用的function名的参数
+                        jsonpCallback: "success_jsonpCallback", //callback的function名称,服务端会把名称和data一起传递回来
+                        success: function(json) {
+                            alert(json);
+                        },
+                        error: function(){alert('Error');}
+                    });
+                })
             });
-
+            function jsonpCallBack(data){
+                alert(123);
+                alert(data.username);
+            }
 
         </script>
     </head>
@@ -79,6 +123,9 @@
             <button type="button" id="confirm2" >Jsonp-1跨域请求</button>
             <button type="button" id="confirm3" >Jsonp-2跨域请求</button>
             <button type="button" id="confirm4" >Jsonp-3跨域请求</button>
+            <button type="button" id="confirm5" >Jsonp-4跨域请求</button>
+            <button type="button" id="confirm6" >Jsonp-5跨域请求</button>
+            <button type="button" id="confirm7" >Jsonp-6跨域请求</button>
         </form>
     </body>
 </html>  

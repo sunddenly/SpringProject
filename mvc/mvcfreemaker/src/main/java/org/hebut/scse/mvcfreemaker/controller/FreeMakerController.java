@@ -1,7 +1,9 @@
 package org.hebut.scse.mvcfreemaker.controller;
 
 import com.fasterxml.jackson.databind.util.JSONPObject;
+import org.hebut.scse.mvcfreemaker.pojo.JsonResponse;
 import org.hebut.scse.mvcfreemaker.pojo.User;
+import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -62,6 +64,41 @@ public class FreeMakerController {
         return new JSONPObject(callbackFunName,user);
     }
 
+    @RequestMapping(value = "/jsonp3", method = RequestMethod.GET)
+    @ResponseBody
+    public JSONPObject getJsonp3Data(HttpServletRequest request, HttpServletResponse response) {
+        User user = new User();
+        user.setUsername("JiangXinyu");
+        user.setPassword("qweqweqw");
+        return new JSONPObject("jsonpCallBack",user);
+    }
+
+    @RequestMapping(value = "/jsonp4", method = RequestMethod.GET)
+    @ResponseBody
+    public JSONPObject getJsonp4Data(HttpServletRequest request, HttpServletResponse response) {
+        User user = new User();
+        user.setUsername("JiangXinyu");
+        user.setPassword("qweqweqw");
+//        MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(user);
+//        mappingJacksonValue.setJsonpFunction("success_jsonpCallback");
+        return new JSONPObject("success_jsonpCallback",user);
+    }
+
+
+    @RequestMapping(value = "/jsonp5", method = RequestMethod.GET)
+    @ResponseBody
+    public JSONPObject getJsonp5Data(HttpServletRequest request, HttpServletResponse response) {
+        JsonResponse<User> userJsonResponse = new JsonResponse<User>();
+        User user = new User();
+        user.setPassword("2332");
+        user.setUsername("qweqweq");
+        userJsonResponse.setCode(-1);
+        userJsonResponse.setData(user);
+        userJsonResponse.setMessage("info");
+        MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(user);
+        mappingJacksonValue.setJsonpFunction("success_jsonpCallback");
+        return new JSONPObject("success_jsonpCallback",userJsonResponse);
+    }
     @RequestMapping(value = "/json", method = RequestMethod.GET)
     @ResponseBody
     public User getJsonData(HttpServletRequest request, HttpServletResponse response) {
