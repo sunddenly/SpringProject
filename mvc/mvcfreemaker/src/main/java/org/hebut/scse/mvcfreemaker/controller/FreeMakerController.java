@@ -1,9 +1,7 @@
 package org.hebut.scse.mvcfreemaker.controller;
 
 import com.fasterxml.jackson.databind.util.JSONPObject;
-import org.hebut.scse.mvcfreemaker.pojo.JsonResponse;
 import org.hebut.scse.mvcfreemaker.pojo.User;
-import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -88,16 +86,7 @@ public class FreeMakerController {
     @RequestMapping(value = "/jsonp5", method = RequestMethod.GET)
     @ResponseBody
     public JSONPObject getJsonp5Data(HttpServletRequest request, HttpServletResponse response) {
-        JsonResponse<User> userJsonResponse = new JsonResponse<User>();
-        User user = new User();
-        user.setPassword("2332");
-        user.setUsername("qweqweq");
-        userJsonResponse.setCode(-1);
-        userJsonResponse.setData(user);
-        userJsonResponse.setMessage("info");
-        MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(user);
-        mappingJacksonValue.setJsonpFunction("success_jsonpCallback");
-        return new JSONPObject("success_jsonpCallback",userJsonResponse);
+        return null;
     }
     @RequestMapping(value = "/json", method = RequestMethod.GET)
     @ResponseBody
