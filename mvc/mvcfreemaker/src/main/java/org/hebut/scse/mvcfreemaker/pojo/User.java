@@ -16,4 +16,14 @@ public class User{
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	/**
+	 *返回的字符串逻辑
+	 */
+	@Override
+	public String toString() {
+		return "User{" +
+				"username='" + username + '\'' +
+				", password='" + password + '\'' +
+				'}';
+	}
 }
